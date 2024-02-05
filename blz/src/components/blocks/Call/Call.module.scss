@@ -22,6 +22,7 @@
     flex-direction: column;
 
     @media screen and (max-width: 1230px) {
+        padding: 10px 30px;
         width: auto;
     }
 }
@@ -29,6 +30,9 @@
 .tittle{
     text-align: center;
     margin: 0 auto;
+    @media screen and (max-width: 650px) {
+        font-size: 24px;
+    }
 }
 
 .form {
@@ -36,6 +40,10 @@
     padding: 15px 20px;
     margin: 10px;
     background-color: #E9E9E9 ;
+    @media screen and (max-width: 650px) {
+    padding: 5px 10px;
+    margin: 5px;
+    }
 }
 
 
@@ -44,6 +52,10 @@
     padding: 5px 10px;
     margin: 10px;
     background-color: #E9E9E9 ;
+    @media screen and (max-width: 650px) {
+        padding: 5px 10px;
+        margin: 5px;
+        }
 }
 
 textarea {

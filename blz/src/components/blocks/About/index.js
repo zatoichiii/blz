@@ -6,28 +6,26 @@ const About = () => {
     return (
         <Container>
                 <div className={styles.bodyWrapper}>
-
                     <div className={styles.wrapper}>
-                        <div className={styles.text}>
-                            <div className={styles.title}>
-                                Производство BLZ
-                            </div>
-                                <div className={styles.subtittle}>
-                                Унаследуйте дух шведского индустриализма и создайте модель лифтов высокого класса.                                </div>
-                                <div className={styles.line}></div>
-                                <div className={styles.description}>
-                                Основными видами изготавливаемой продукции являются пассажирские лифты, подъемники грузовые,подъемники для инвалидов, пандусы и др. Мы оказываем весь комплекс услуг по подбору, проектированию, монтажу и наладке, модернизации, обслуживанию и ремонту лифтового оборудования, усердно работая над развитием производства. Белорусский лифтовый завод создаёт SMART системы для платформы «Умный лифт» - наиболее комфортной и безопасной для пассажиров.
-                                </div>
-                                <div className={styles.button}>
-                            Подробнее
-                        </div>
-                        </div>
+                    <div className={styles.info}> 
+                    <div className={styles.tittle}>
+                    Производство BLZ 
+                    </div>
+                    <div className={styles.subtittle}>
+                    Унаследуйте дух шведского индустриализма и создайте модель лифтов высокого класса.
+                    </div>
+                    <div className={styles.text}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div className={styles.button}>Подробнее</div>
+                    </div>
+                    <div className={styles.image}> <img src='/images/Main/fabric.png'></img></div>
+
                     </div>
 
-
-                    <div className={styles.images}>
-                        <img src={"/images/Main/fabric.png"}/>
-                    </div>
                 </div>
                 </Container>
     );

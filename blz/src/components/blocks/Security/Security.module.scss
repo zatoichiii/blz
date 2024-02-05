@@ -55,18 +55,20 @@
 }
 
 .button{
-    margin: 20px 0;
-    padding: 20px;
-    width: 170px;
-    font-size: 24px;
-    color: white; 
-    font-weight: 200;
     background-color: #5382DF;
+    width: 200px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    color: white;
+    font-size: 24px;
+    font-weight: 200;
+    border: 2px solid #5382DF;
     cursor: pointer;
     transition: 0.3s;
-    &:hover{
-        background-color: #5d93ff;
-    }
+    &:hover {
+        background-color: #5e8eec; 
+      }
 }
 
 .images{
