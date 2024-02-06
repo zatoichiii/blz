@@ -15,6 +15,11 @@ import Background from "./components/blocks/Background";
 import Tittle from "./components/blocks/Tittle";
 
 import Banner_Technologies from "./components/blocks/Banner_Technologies";
+import Experts from "./components/blocks/Experts";
+import Info from "./components/blocks/Info";
+import Possibility from "./components/blocks/Possibility";
+
+
 
 function App() {
   return (
@@ -40,8 +45,13 @@ function App() {
              <Call/>
              <Footer/>*/}
 
-              <Header/>
+              {/*<Header/>
               <Banner_Technologies/>
+              <Experts/>
+              <Info/>
+              <Possibility/>
+              <Call/>
+              <Footer/>*/}
 
 
              
