@@ -20,11 +20,12 @@ import Info from "./components/blocks/Info";
 import Possibility from "./components/blocks/Possibility";
 
 
+import Banner_Products from "./components/blocks/Banner_Products";
+
 
 function App() {
   return (
     <div className='App'>
-            {/* Главная
             <Header/>
             <Banner/>
             <Stats/>
@@ -34,25 +35,31 @@ function App() {
             <Security/>
             <Call/>
             <Footer/>
-             */}
+            
 
-              {/* О нас
+
              <Header/>
              <Banner_About/>
              <Tittle/>
              <Facts/>
              <Background/>
              <Call/>
-             <Footer/>*/}
+             <Footer/>
 
-              {/*<Header/>
+          
+              <Header/>
               <Banner_Technologies/>
               <Experts/>
               <Info/>
               <Possibility/>
               <Call/>
-              <Footer/>*/}
+              <Footer/>
 
+              <Header/>
+              <Banner_Products/>
+              <Products/>
+              <Call/>
+              <Footer/>
 
              
     </div>
