@@ -41,22 +41,12 @@
   display: flex;
   gap: 25px;
   align-items: center;
-  @media screen and (max-width: 890px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 }
 
-.burger{
-  display: none;
-  align-items: center;
-  min-width: 30px;
-  svg{
-    width: 30px;
-  }
-  @media screen and (max-width: 890px) {
-    display: flex;
-  }
-}
+
 
 .headerItem{
   cursor: pointer;
@@ -81,6 +71,21 @@
   }
 }
 
-.burgerItem{
-  font-size: 16px;
+
+.burger{
+  display: none;
+  justify-content: right;
+  width: 40px;
+  background-color: white;
+  cursor: pointer;
+  @media screen and (max-width: 900px) {
+    display: flex;
+  }
+}
+
+.burger-btn{
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  position: relative;
 }

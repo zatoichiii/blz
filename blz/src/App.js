@@ -23,10 +23,21 @@ import Possibility from "./components/blocks/Possibility";
 import Banner_Products from "./components/blocks/Banner_Products";
 
 
+import Product from "./components/blocks/Product";
+
+import Banner_FAQ from "./components/blocks/Banner_FAQ";
+import FAQ from "./components/blocks/FAQ";
+
+
+import Banner_Contact from "./components/blocks/Banner_Contact";
+import Contacts from "./components/blocks/Contacts";
+import Map from "./components/blocks/Map";
+
+
 function App() {
   return (
     <div className='App'>
-            <Header/>
+           {/*  <Header/>
             <Banner/>
             <Stats/>
             <About/>
@@ -34,32 +45,52 @@ function App() {
             <Products/>
             <Security/>
             <Call/>
-            <Footer/>
+            <Footer/>*/}
             
 
-
-             <Header/>
+           {/*  <Header/>
              <Banner_About/>
              <Tittle/>
              <Facts/>
              <Background/>
              <Call/>
-             <Footer/>
+             <Footer/>*/}
 
           
-              <Header/>
+              {/*<Header/>
               <Banner_Technologies/>
               <Experts/>
               <Info/>
               <Possibility/>
               <Call/>
-              <Footer/>
+              <Footer/>*/}
 
-              <Header/>
+              {/* <Header/>
               <Banner_Products/>
               <Products/>
               <Call/>
-              <Footer/>
+              <Footer/> */}
+
+              {/* <Header/>
+              <Banner_Products/>
+              <Product/>
+              <Call/>
+              <Footer/>*/}
+
+              {/* <Header/>
+              <Banner_FAQ/>
+              <FAQ/>
+              <Call/>
+              <Footer/>*/}
+
+             {/* <Header/>
+              <Banner_Contact/>
+              <Contacts/>
+              <Map/>
+              <Call/>
+              <Footer/>*/}
+
+
 
              
     </div>

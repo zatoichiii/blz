@@ -10,7 +10,7 @@ const Accordion = ({ title, description }) => {
                 {title}
             </div>
             <div className={styles.plus}  onClick={()=>setOpen(!open)} >
-                +
+            +
             </div>
             </div>
             <div className={`${styles.description} ${open ? styles.descriptionOpen : ""}`}>

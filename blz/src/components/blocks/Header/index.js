@@ -1,54 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import styles from "./Header.module.scss"
-import {Dropdown} from "antd";
 import Menu_Container from "../../UI/Menu_Container";
-import {UnorderedListOutlined} from "@ant-design/icons";
+import Menu from '../../UI/Menu';
 
-const items = [
-    {
-        key: '1',
-        label: (
-            <a href={"#main"} className={styles.burgerItem}>Главная</a>
-        ),
-    },
-    {
-        key: '2',
-        label: (
-            <a href={"#about"} className={styles.burgerItem}>О нас</a>
-        ),
-    },
-    {
-        key: '3',
-        label: (
-            <a href={"#technologies"} className={styles.burgerItem}>Технологии</a>
-        ),
-    },
-    {
-        key: '4',
-        label: (
-            <a href={"products"} className={styles.burgerItem}>Ассортимент</a>
-        ),
-    },
-    {
-        key: '5',
-        label: (
-            <a href={"faq"} className={styles.burgerItem}>FAQ</a>
-        ),
-    },
-    {
-        key: '6',
-        label: (
-            <a href={"news"} className={styles.burgerItem}>Новости</a>
-        ),
-    },
-    {
-        key: '7',
-        label: (
-            <a href={"contact"} className={styles.burgerItem}>Контакты</a>
-        ),
-    },
-    
-];
 
 const Index = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -68,6 +22,16 @@ const Index = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+ {/*const Items = [
+    {value: "Главная", href: '/main'},
+    {value: "О нас", href: '/about'},
+    {value: "Технологии", href: '/technologies'},
+    {value: "Ассортимент", href: '/products'},
+    {value: "FAQ", href: '/faq'},
+    {value: "Новости", href: '/news'},
+    {value: "Контакты", href: '/contact'},
+]*/}
     return (
 
         <div className={`${styles.headerWrapper} ${scrolled ? styles.scrolled : ""}`} >
@@ -86,18 +50,16 @@ const Index = () => {
                     <a href={"#contact"} className={styles.headerItem}>Контакты</a>
                 </div>
                 <div className={styles.burger}>
-                    <Dropdown
-                        menu={{
-                            items,
-                        }}
-                        placement="bottomRight"
-                    >
-                        <UnorderedListOutlined style={{color: "#FFFFFF"}} />
-                    </Dropdown>
-                </div>
+                    <div className={styles.burger_btn}>
+                        <span/>
+                    </div>
+            </div>
             </div>
 
+
+
             </Menu_Container>
+           {/* <Menu items={items}/> */}
         </div>
     );
 };
