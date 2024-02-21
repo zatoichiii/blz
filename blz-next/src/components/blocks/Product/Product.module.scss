@@ -1,0 +1,120 @@
+
+
+.bodyWrapper{
+    width: 100%;
+    display: flex;
+    margin: 30px auto;
+    @media screen and (max-width: 1230px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+}
+.wrapper{
+    font-family: 'Inter', sans-serif;
+    padding: 0px 20px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    flex-direction: column;
+
+    @media screen and (max-width: 1230px) {
+        width: auto;
+    }
+}
+
+
+
+.title{
+    width: auto;
+    padding: 0 0 10px 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000000;
+    gap: 5px;
+
+    @media screen and (max-width: 1230px) {
+        width: 710px;
+    }
+
+    @media screen and (max-width: 830px) {
+        width: 570px;
+        font-size: 32px;
+    }
+    @media screen and (max-width: 690px) {
+        width: auto;
+    }
+
+    @media screen and (max-width: 445px) {
+        width: 230px;
+    }
+
+}
+
+.numbers{
+    padding: 5px 0;
+}
+
+.button{
+    display: inline-block;
+    background-color: #5382DF;
+    width: auto;
+    text-align: center;
+    margin: 20px 30px 40px 0px;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 200;
+    border: 2px solid #5382DF;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-color: #5e8eec; 
+      }
+      @media screen and (max-width: 755px) {
+       margin: 10px 0;
+    }
+    @media screen and (max-width: 490px) {
+        font-size: 14px;
+     }
+}
+    
+
+.description, .subtittle{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.subtittle{
+    padding: 30px 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.images{
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    @media screen and (max-width: 1230px) {
+       margin: auto;
+       width: auto;
+    } 
+}
+
+
+.images img {
+    margin: 0 auto;
+    width: 250px; 
+    height: auto;
+    @media screen and (max-width: 580px) {
+       
+    } 
+}

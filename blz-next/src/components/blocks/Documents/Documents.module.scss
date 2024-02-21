@@ -1,0 +1,52 @@
+
+.bodyWrapper{
+    background-color: #5382DF;
+    width: 100%;
+    display: flex;
+    @media screen and (max-width: 1230px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+.wrapper{
+    color: #5382DF;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    padding: 20px 60px;
+    position: relative;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    margin: 90px auto;
+    flex-direction: column;
+    height: 600px;
+
+    @media screen and (max-width: 1230px) {
+        padding: 10px 30px;
+        width: auto;
+    }
+}
+
+.tittle{
+    text-align: center;
+    margin: 0 auto;
+    @media screen and (max-width: 650px) {
+        font-size: 24px;
+    }
+}
+
+.blurBack{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+
