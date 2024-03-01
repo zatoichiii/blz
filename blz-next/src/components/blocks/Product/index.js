@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from "./Product.module.scss"
 import Container from "../../UI/Container";
+import Show from "../../UI/Show";
 
 const Product = () => {
     return (
         <Container>
+                <Show>
                 <div className={styles.bodyWrapper}>
                 <div className={styles.images}>
                         <img src={"/images/Technologies/elevator.png"}/>
@@ -31,6 +33,7 @@ Ceiling: SGLT-18-006, mirror stainless steel, lighting, LED flush light panelCar
 
         
                 </div>
+                </Show>
                 </Container>
     );
 };

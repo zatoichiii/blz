@@ -15,7 +15,7 @@ export default function Page() {
              <Banner_About/>
              <Tittle/>
              <Facts/>
-            <Documents/>
+             <Documents/>
              <Background/>
              <Call/>
              <Footer/>

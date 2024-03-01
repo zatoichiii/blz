@@ -1,0 +1,10 @@
+.ShowStyleOff{
+    opacity: 0;
+    transform: translateY(70px);
+}
+.ShowStyleOn{
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+
+}

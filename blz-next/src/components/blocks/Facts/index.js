@@ -1,11 +1,15 @@
 import React from 'react';
 import styles from "./Facts.module.scss"
 import Container from "../../UI/Container";
+import Show from "../../UI/Show";
+
 
 const Facts = () => {
     return (
         <Container>
+
                 <div className={styles.bodyWrapper}>
+                <Show>
                     <div className={styles.wrapper}>
                     <div className={styles.image}> <img src='/images/About/first people.png'></img></div>
                     <div className={styles.info}> 
@@ -20,6 +24,9 @@ const Facts = () => {
                     </div>
                     </div>
                     </div>
+                    </Show>
+                <Show>
+
                     <div className={styles.wrapper_reverse}>
                     
                     <div className={styles.info}> 
@@ -37,6 +44,8 @@ const Facts = () => {
                     <div className={styles.image}> <img src='/images/About/people2.png'></img></div>
 
                     </div>
+                    </Show>
+                    <Show>
                     <div className={styles.wrapper}>
                     <div className={styles.image}> <img src='/images/About/people3.png'></img></div>
                     <div className={styles.info}> 
@@ -54,7 +63,10 @@ const Facts = () => {
                     
 
                     </div>
+                    </Show>
+
                 </div>
+                
                 </Container>
     );
 };

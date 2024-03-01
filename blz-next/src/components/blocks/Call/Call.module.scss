@@ -20,10 +20,14 @@
     display: flex;
     margin: 90px auto;
     flex-direction: column;
+    resize: none;
 
     @media screen and (max-width: 1230px) {
         padding: 10px 30px;
         width: auto;
+    }
+    @media screen and (max-width: 435px) {
+        padding: 5px 5px;
     }
 }
 
@@ -33,6 +37,7 @@
     @media screen and (max-width: 650px) {
         font-size: 24px;
     }
+
 }
 
 .form {
@@ -42,10 +47,8 @@
     text-decoration: none;
     outline: none;
     background-color: #E9E9E9 ;
-    @media screen and (max-width: 650px) {
-    padding: 5px 10px;
-    margin: 5px;
-    }
+
+    
 }
 
 
@@ -54,38 +57,34 @@
     padding: 5px 10px;
     margin: 10px;
     background-color: #E9E9E9 ;
-    @media screen and (max-width: 650px) {
-        padding: 5px 10px;
-        margin: 5px;
-        }
 }
 
-//textarea {
-//    width: 100%;
-//    padding: 10px;
-//    font-size: 18px;
-//    border: none;
-//    background-color: #E9E9E9 ;
-//    outline: none;
-//    resize: none;
-//    text-decoration: none;
-//  }
-//
-//    .button{
-//        text-align: center;
-//        margin: 20px auto;
-//        padding: 10px;
-//        width: 300px;
-//        font-size: 18px;
-//        color: white;
-//        font-weight: 300;
-//        background-color: #5382DF;
-//        cursor: pointer;
-//        transition: 0.3s;
-//        &:hover{
-//            background-color: #5d93ff;
-//        }
-//    }
+.textareea {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #E9E9E9 ;
+    outline: none;
+    text-decoration: none;
+    resize: none;
+  }
+
+    .button{
+        text-align: center;
+        margin: 20px auto;
+        padding: 10px;
+        width: 300px;
+        font-size: 18px;
+        color: white;
+       font-weight: 300;
+        background-color: #5382DF;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            background-color: #5d93ff;
+        }
+   }
 
 
 

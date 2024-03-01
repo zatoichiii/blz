@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from "./Possibility.module.scss"
 import Container from "../../UI/Container";
+import Show from "../../UI/Show";
 
 const Possibility = () => {
     return (
         <Container>
+            <Show>
+
                 <div className={styles.bodyWrapper}>
                 <div className={styles.images}>
                         <img src={"/images/Technologies/elevator.png"}/>
@@ -22,6 +25,7 @@ const Possibility = () => {
 
         
                 </div>
+                </Show>
                 </Container>
     );
 };

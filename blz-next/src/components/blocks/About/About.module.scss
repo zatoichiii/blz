@@ -1,61 +1,65 @@
 
 
+.bodyWrapper{
+    width: 100%;
+    display: flex;
+    padding: 50px 0;
+    opacity: 0;
+    transform: translateY(70px);
+    @media screen and (max-width: 1230px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+.bodyWrapperShow{
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+
+}
 .wrapper{
     font-family: 'Inter', sans-serif;
     padding: 40px 0 20px 0;
     position: relative;
+    width: 40%;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     display: flex;
-    width: auto;
-    @media screen and (max-width: 960px) {
-        flex-direction: column;
-    }
-}
-
-
-.image{
-    padding: 0 80px;
-    width: 50%;
-
-    @media screen and (max-width: 1350px) {
-        width: auto;
-    }
-    @media screen and (max-width: 700px) {
-        padding: 0;
-    }
-}
-
-.info{
     margin: 0 auto;
-    width: 50%;
-    @media screen and (max-width: 960px) {
-        padding: 0 0 30px 0;
+    flex-direction: column;
+
+    @media screen and (max-width: 1230px) {
         width: auto;
     }
 }
 
 
-.tittle{
-    display: inline-block;
-    color: #5382DF;
+.title{
+    width: 390px;
     font-size: 40px;
-    font-weight: bold;
-    padding: 10px 0;
+    font-weight: 700;
+    color: #5382DF;
+    gap: 5px;
     margin-bottom: 20px;
     border-bottom: 5px solid #5382DF;
-    @media screen and (max-width: 1075px) {
-        font-size: 32px;
+    @media screen and (max-width: 455px) {
+        font-size: 24px;
+        width: 230px;
     }
-    @media screen and (max-width: 460px) {
-        font-size: 32px;
-    }
-    
+
 }
 
-.subtittle{
-    padding: 10px 0 20px 0;
-    width: 70%;
+.subtitle{
+    padding: 10px 0;
+}
+
+
+.description{
+    padding: 1px 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
 
 .button{
@@ -73,4 +77,25 @@
     &:hover {
         background-color: #5e8eec; 
       }
+}
+
+.images{
+    padding: 20px;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+
+.images img {
+    width: 650px; 
+    height: auto;
+    @media screen and (max-width: 1520px) {
+        width: 550px;
+    } 
+
+    @media screen and (max-width: 580px) {
+        padding: 20px 0;
+    } 
 }

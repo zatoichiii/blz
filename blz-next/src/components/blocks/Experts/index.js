@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from "./Experts.module.scss"
 import Container from "../../UI/Container";
+import Show from "../../UI/Show";
 
 const Experts = () => {
     return (
         <Container>
+                <Show>
+
                 <div className={styles.bodyWrapper}>
 
                     <div className={styles.wrapper}>
@@ -22,6 +25,7 @@ const Experts = () => {
                         <img src={"/images/Technologies/inelevator.png"}/>
                     </div>
                 </div>
+                </Show>
                 </Container>
     );
 };

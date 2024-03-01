@@ -71,20 +71,22 @@
 }
 
 
-.burger{
-  display: none;
-  justify-content: right;
-  width: 40px;
-  background-color: white;
+.burger {
+  height: 50px;
+  width: 50px;
+  z-index: 50;
+  align-items: right;
   cursor: pointer;
+  display: none;
   @media screen and (max-width: 900px) {
-    display: flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .burger_bar {
+          width: 40px;
+          height: 3px;
+          background-color: white;
+          transition: all 0.3s ease;
+      }
   }
-}
-
-.burger-btn{
-  width: 30px;
-  height: 30px;
-  margin-left: 20px;
-  position: relative;
 }

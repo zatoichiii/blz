@@ -1,28 +1,39 @@
+.swiperr{
+  height: 70vh;
+}
 
-.wrapper{
-  background: url("../../../../public/images/Main/elevator.png") no-repeat;
+.slider{
   font-family: 'inter', sans-serif;
-  background-size: cover;
-  height: 550px;
+  background: url("../../../../public/images/Main/elevator.png") no-repeat;
+  background-size: cover; 
   display: flex;
+  align-items: center;
+  justify-content: center; 
   width: 100%;
 }
-
-.inner{
-  height: 600px;
+.slider2{
+  font-family: 'inter', sans-serif;
+  background: url("../../../../public/images/Main/zavod.png") no-repeat;
+  background-size: cover; 
   display: flex;
-  justify-content: space-between;
-  padding: 350px 0;
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+}
+.inner {
+  position: absolute; 
+  bottom: 0; 
+  left: 0;
+
 }
 
-.info{
-  padding: 170px 40px;
-  width: 80%;
+.info {
+  width: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
 
+  padding: 20px;
 
   @media screen and (max-width: 960px) {
     width: 85%;
@@ -32,32 +43,25 @@
   }
   @media screen and (max-width: 560px) {
     width: 100%;
+    padding: 0;
   }
 }
 
-.title{
+.title {
   font-size: 40px;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
-
-
   color: #FFFFFF;
-  b{
+  padding: 40px 40px 60px 40px;
+
+  b {
     color: #5382DF;
   }
   @media screen and (max-width: 700px) {
     font-size: 32px;
   }
-
   @media screen and (max-width: 560px) {
     font-size: 28px;
   }
 }
-
-
-
-
-
-
-

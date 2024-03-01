@@ -1,10 +1,14 @@
 import React from 'react';
 import styles from "./Info.module.scss"
 import Container from "../../UI/Container";
+import Show from "../../UI/Show";
+
 
 const Info = () => {
     return (
         <Container>
+                <Show>
+
                 <div className={styles.bodyWrapper}>
                    
                         <div className={styles.first_block}>
@@ -21,6 +25,7 @@ const Info = () => {
                         </div>
                     
                 </div>
+                </Show>
                 </Container>
     );
 };

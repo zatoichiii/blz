@@ -1,0 +1,57 @@
+.menu{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    font-family: 'inter', sans-serif;
+    font-weight: bold;
+}
+.menu.active{
+    transform: translateX(0);
+}
+
+
+.menuHeader{
+    padding: 10px;
+    font-size: 2rem;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: center;
+
+}
+
+.menuItem{
+    padding: 5px;
+}
+.ItemWord{
+    font-size: 24px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menuContent {
+    width: 40%;
+    height: 100%;
+    background-color: #007aff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    flex-grow: 1; 
+}
+
+.footer{
+    padding: 10px;
+}

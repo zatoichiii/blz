@@ -1,10 +1,14 @@
 import React from 'react';
 import styles from "./Contacts.module.scss"
 import Container from "../../UI/Container";
+import Show from "../../UI/Show";
+
 
 const Contacts = () => {
     return (
         <Container>
+                <Show>
+
                 <div className={styles.bodyWrapper}>
                 <div className={styles.wrapper}>
                     <div className={styles.contact}>
@@ -47,6 +51,7 @@ const Contacts = () => {
 
                     </div>
                 </div>
+                </Show>
                 </Container>
     );
 };

@@ -1,31 +1,61 @@
-import React from 'react';
+
 import styles from "./About.module.scss"
 import Container from "../../UI/Container";
+import React, { useEffect, useState, useRef } from 'react';
+
 
 const About = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const productRef = useRef(null);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+  
+      if (productRef.current) {
+        observer.observe(productRef.current);
+      }
+  
+      return () => {
+        if (productRef.current) {
+          observer.unobserve(productRef.current);
+        }
+      };
+    }, []);
+    
     return (
         <Container>
-                <div className={styles.bodyWrapper}>
+                <div ref={productRef} className={`${styles.bodyWrapper} ${isVisible ? styles.bodyWrapperShow : ''}`}>
                     <div className={styles.wrapper}>
-                    <div className={styles.info}> 
-                    <div className={styles.tittle}>
-                    Производство BLZ 
+                        <div ref={productRef} className={styles.text}>
+                            <div className={styles.title}>
+                                Производство BLZ
+                            </div>
+                            <div className={styles.subtitle}>
+                            Унаследуйте дух шведского индустриализма и создайте модель лифтов высокого класса.
+                            </div>
+                                <div className={styles.description}>
+                                Разумно определите возможность сбоя в работе лифта. Когда лифт выходит из строя или выходит из строя из-за перебоев в подаче электроэнергии, система автоматически переключается и берет на себя основную систему управления. 
+                            </div>
+                            <div className={styles.description}>
+                            Без помощи обслуживающего и аварийно-спасательногоперсонала машина поднимается на ближайший этаж.После остановки дверь лифта откроется автоматически, так что оказавшиеся в ловушке пассажиры смогут безопасно выйти из лифта.                               
+                            </div>
+                                <div className={styles.button}>
+                            Подробнее
+                        </div>
+                        </div>
                     </div>
-                    <div className={styles.subtittle}>
-                    Унаследуйте дух шведского индустриализма и создайте модель лифтов высокого класса.
-                    </div>
-                    <div className={styles.text}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                    <div className={styles.button}>Подробнее</div>
-                    </div>
-                    <div className={styles.image}> <img src='/images/Main/fabric.png'></img></div>
 
-                    </div>
 
+                    <div className={styles.images}>
+                        <img src={"/images/Main/fabric.png"}/>
+                    </div>
                 </div>
                 </Container>
     );

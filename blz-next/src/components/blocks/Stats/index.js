@@ -1,12 +1,14 @@
 import React from 'react';
 import styles from "./Stats.module.scss"
 import Container from "../../UI/Container";
+import Show from "../../UI/Show";
 
 const Stats = () => {
     return (
 
         <div className={styles.wrapper}>
             <Container>
+                <Show>
                 <div className={styles.bodywrapper}>
                 <div className={styles.inner}>
                 <div className={styles.number}>1</div> Единственный производитель лифтов А1 класса в Ростове и Ростовской области
@@ -21,6 +23,7 @@ const Stats = () => {
                 <div className={styles.number}>24</div>  Мы готов предложить более 24 различных видов лифтового оборудования 
                 </div>
                 </div>
+                </Show>
                 </Container>
         </div>
     );

@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from "./Banner_Contact.module.scss"
+import styles from "./Banner_News.module.scss"
 import Menu_Container from "../../UI/Menu_Container";
 import Show from "../../UI/Show";
 
 
-const Banner_Contact = () => {
+const Banner_News = () => {
     return (
 
         <div className={styles.wrapper}>
@@ -13,9 +13,9 @@ const Banner_Contact = () => {
                 <Show>
                     <div className={styles.info}>
                         <div className={styles.title}>
-                           Контакты
+                           Новости
                         </div>
-                        <div className={styles.subtittle}> Не упустите свою возможность заказать лучшее лифтовое оборудование в Ростовской области  </div>
+                        <div className={styles.subtittle}> Будьте в курсе последних событий компании </div>
                     </div>
                     </Show>
                 </div>
@@ -24,4 +24,4 @@ const Banner_Contact = () => {
     );
 };
 
-export default Banner_Contact;
+export default Banner_News;

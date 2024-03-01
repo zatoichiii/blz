@@ -5,6 +5,9 @@
   height: auto;
   display: flex;
   width: 100%;
+  @media screen and (max-width: 960px) {
+    margin: 0 auto;
+  }
 }
 
 .bodywrapper {
@@ -27,6 +30,14 @@
   }
 }
 
+
+.inner img {
+  transition: transform 0.3s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.1); 
+}
 
 
 

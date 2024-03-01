@@ -8,6 +8,8 @@ import Products from "@/src/components/blocks/Products";
 import Security from "@/src/components/blocks/Security";
 import Call from "@/src/components/blocks/Call";
 import Footer from "@/src/components/blocks/Footer";
+import FAQ from '@/src/components/blocks/FAQ';
+import NewsBlock from '@/src/components/blocks/NewsBlock/NewsBlock';
 
 export default function Page() {
     return (
@@ -19,6 +21,8 @@ export default function Page() {
             <Photos/>
             <Products/>
             <Security/>
+            <FAQ/>
+            <NewsBlock/>
             <Call/>
             <Footer/>
         </div>

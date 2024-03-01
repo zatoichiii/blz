@@ -1,4 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
+import Show from "../../UI/Show";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -22,6 +24,7 @@ const Documents = () => {
     return (
         <div className={styles.bodyWrapper}>
             <Container>
+
 
                 <div className={styles.wrapper}>
                     <div onClick={()=>setVisible(!visible)} className={styles.tittle}>

@@ -1,10 +1,14 @@
 import React from 'react';
-import styles from "./Security.module.scss"
+import styles from "./Security.module.scss";
 import Container from "../../UI/Container";
+import Show from "../../UI/Show";
+
 
 const Security = () => {
     return (
         <Container>
+                <Show>
+
                 <div className={styles.bodyWrapper}>
 
                     <div className={styles.wrapper}>
@@ -29,6 +33,7 @@ const Security = () => {
                         <img src={"/images/Main/security.png"}/>
                     </div>
                 </div>
+                </Show>
                 </Container>
     );
 };
