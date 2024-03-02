@@ -1,13 +1,11 @@
 
-.wrapper{
+.wrapper {
   background: url("../../../../public/images/Main/backgorund_city.png") no-repeat;
-  font-family: 'inter', sans-serif;
   background-size: cover;
-  height: auto;
-  display: flex;
-  width: 100%;
-  color:white;
-
+  background-attachment: fixed; /* Для создания parallax-эффекта */
+  height: 25vh; /* Занимает всю высоту окна браузера */
+  font-family: 'inter', sans-serif;
+  color: white;
 }
 
 .bodywrapper{

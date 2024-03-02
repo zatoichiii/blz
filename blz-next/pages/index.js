@@ -10,6 +10,7 @@ import Call from "@/src/components/blocks/Call";
 import Footer from "@/src/components/blocks/Footer";
 import FAQ from '@/src/components/blocks/FAQ';
 import NewsBlock from '@/src/components/blocks/NewsBlock/NewsBlock';
+import SliderNews from '@/src/components/blocks/SliderNews';
 
 export default function Page() {
     return (
@@ -23,6 +24,7 @@ export default function Page() {
             <Security/>
             <FAQ/>
             <NewsBlock/>
+            <SliderNews/>
             <Call/>
             <Footer/>
         </div>

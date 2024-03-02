@@ -16,7 +16,6 @@ const Banner = () => {
             loop={true}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
-            navigation={true} 
             autoplay={{delay: 2000}}
         >
             <SwiperSlide className={styles.slider}>
