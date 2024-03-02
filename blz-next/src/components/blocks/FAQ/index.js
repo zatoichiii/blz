@@ -4,7 +4,6 @@ import Container from "../../UI/Container";
 import Accordion from "../../UI/Accordion";
 import Show from "../../UI/Show";
 
-
 const FAQ = () => {
     return (
         <Container>
@@ -15,33 +14,33 @@ const FAQ = () => {
                 </div>
                 <div className={styles.faqContainer}>
                     <div className={styles.faq}>
-                        <div className={styles.padd}>
+                        {/*<div className={styles.padd}>*/}
                             <Accordion title={"Вопрос"} description={"Ответ."}/>
-                        </div>
-                        <div className={styles.padd}>
+                        {/*</div>*/}
+                        {/*<div className={styles.padd}>*/}
                             <Accordion title={"Вопрос"} description={"Ответ"}/>
-                        </div>
-                        <div className={styles.padd}>
+                        {/*</div>*/}
+                        {/*<div className={styles.padd}>*/}
                             <Accordion title={"Сколько вопросов можно задать?"} description={"Ответ"}/>
-                        </div>
-                        <div className={styles.padd}>
+                        {/*</div>*/}
+                        {/*<div className={styles.padd}>*/}
                             <Accordion title={"Почему лифт едет только вверх и вниз?"} description={"Ответ"}/>
-                        </div>
-                        <div className={styles.padd}>
+                        {/*</div>*/}
+                        {/*<div className={styles.padd}>*/}
                             <Accordion title={"Как долго ждать доставку?"} description={"Ответ"}/>
-                        </div>
-                        <div className={styles.padd}>
+                        {/*</div>*/}
+                        {/*<div className={styles.padd}>*/}
                             <Accordion title={"Сложно ли придумать вопрос?"} description={"Ответ"}/>
-                        </div>
-                        <div className={styles.padd}>
+                        {/*</div>*/}
+                        {/*<div className={styles.padd}>*/}
                             <Accordion title={"Сложно ли придумать вопрос?"} description={"Ответ"}/>
-                        </div>
-                        <div className={styles.padd}>
+                        {/*</div>*/}
+                        {/*<div className={styles.padd}>*/}
                             <Accordion title={"Сложно ли придумать вопрос?"} description={"Ответ"}/>
-                        </div>
-                        <div className={styles.padd}>
+                        {/*</div>*/}
+                        {/*<div className={styles.padd}>*/}
                             <Accordion title={"Сложно ли придумать вопрос?"} description={"Ответ"}/>
-                        </div>
+                        {/*</div>*/}
                     </div>
                 </div>
                 </Show>

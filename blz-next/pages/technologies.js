@@ -13,13 +13,12 @@ import Possibility from "@/src/components/blocks/Possibility";
 export default function Page() {
     return (
         <div>
-            <Header/>
+
               <Banner_Technologies/>
               <Experts/>
               <Info/>
               <Possibility/>
-              <Call/>
-              <Footer/>
+
         </div>
     );
 };

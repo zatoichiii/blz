@@ -11,14 +11,14 @@ import Documents from "@/src/components/blocks/Documents";
 export default function Page() {
     return (
         <div>
-             <Header/>
+
              <Banner_About/>
              <Tittle/>
              <Facts/>
              <Documents/>
              <Background/>
-             <Call/>
-             <Footer/>
+
+
         </div>
     );
 };

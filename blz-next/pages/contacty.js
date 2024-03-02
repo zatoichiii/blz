@@ -4,17 +4,16 @@ import Footer from "@/src/components/blocks/Footer";
 import React from "react";
 import Banner_Contact from "@/src/components/blocks/Banner_Contact";
 import Contacts from "@/src/components/blocks/Contacts";
+import MyMap from "@/src/components/blocks/MyMap";
 
 
 
 export default function Page() {
     return (
         <div>
-            <Header/>
             <Banner_Contact/>
             <Contacts/>
-            <Call/>
-            <Footer/>
+            <MyMap/>
         </div>
     );
 };

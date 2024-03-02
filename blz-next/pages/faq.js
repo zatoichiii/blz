@@ -11,11 +11,10 @@ import FAQ from "@/src/components/blocks/FAQ";
 export default function Page() {
     return (
         <div>
-            <Header/>
+
             <Banner_FAQ/>
             <FAQ/>
-            <Call/>
-            <Footer/>
+
         </div>
     );
 };

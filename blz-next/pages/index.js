@@ -15,7 +15,7 @@ import SliderNews from '@/src/components/blocks/SliderNews';
 export default function Page() {
     return (
         <div>
-            <Header/>
+
             <Banner/>
             <Stats/>
             <About/>
@@ -25,8 +25,7 @@ export default function Page() {
             <FAQ/>
             <NewsBlock/>
             <SliderNews/>
-            <Call/>
-            <Footer/>
+
         </div>
     );
 };
