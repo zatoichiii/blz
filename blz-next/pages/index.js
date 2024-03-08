@@ -11,6 +11,7 @@ import Footer from "@/src/components/blocks/Footer";
 import FAQ from '@/src/components/blocks/FAQ';
 import NewsBlock from '@/src/components/blocks/NewsBlock/NewsBlock';
 import SliderNews from '@/src/components/blocks/SliderNews';
+import Client from '@/src/components/blocks/Client';
 
 export default function Page() {
     return (
@@ -24,7 +25,7 @@ export default function Page() {
             <Security/>
             <FAQ/>
             <NewsBlock/>
-            <SliderNews/>
+            <Client/>
 
         </div>
     );

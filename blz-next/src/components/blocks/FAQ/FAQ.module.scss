@@ -4,15 +4,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0px;
-  flex-direction: column; /* Изменено на колонку */
+  padding: 20px;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .titleContainer {
   display: flex;
-  justify-content: flex-start; /* Изменено на начало */
+  justify-content: flex-start;
   width: 100%;
+  max-width: 1000px;
+  padding: 0 20px; /* Добавляем отступы по бокам */
+  box-sizing: border-box; /* Учитываем padding внутри ширины */
 }
+
+.faqContainer {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px; /* Добавляем отступы по бокам */
+  box-sizing: border-box; /* Учитываем padding внутри ширины */
+}
+
+/* остальные стили */
+
 
 .title {
   width: 90px;
