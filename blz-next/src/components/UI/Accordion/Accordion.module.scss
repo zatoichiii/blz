@@ -2,12 +2,15 @@
 
     padding: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Добавляем тень: смещение по горизонтали, смещение по вертикали, размытие, цвет */
-    width: 500px;
+    width: 450px;
     @media screen and (max-width: 600px) {
         width: 400px
     }
     @media screen and (max-width: 500px) {
         width: 350px
+    }
+    @media screen and (max-width: 400px) {
+        width: 300px
     }
     height: fit-content;
 

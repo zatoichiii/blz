@@ -9,7 +9,7 @@ const Stats = () => {
             const parallax = document.querySelector('.wrapper');
             if (parallax) {
                 let scrollPosition = window.pageYOffset;
-                parallax.style.backgroundPositionY = scrollPosition * 0.7 + 'px'; /* Измените 0.7 на любое значение, чтобы настроить скорость параллакса */
+                parallax.style.backgroundPositionY = scrollPosition * 0.7 + 'px'; 
             }
         };
 

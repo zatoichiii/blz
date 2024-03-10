@@ -9,6 +9,9 @@
   width: 100%;
   font-family: 'Inter', sans-serif;
   justify-content: center;
+  @media screen and (max-width: 960px) {
+    display:block;
+  } 
 }
 
 .bodywrapper {
@@ -43,20 +46,7 @@
   background-color: #5382DF;
   @media screen and (max-width: 1250px) {
     font-size: 28px;
-    width: 300px;
-  } 
-  @media screen and (max-width: 1030px) {
-    width: 200px;
-    font-size: 24px;
-  } 
-  @media screen and (max-width: 960px) {
-    width: 450px;
-  } 
-  @media screen and (max-width: 650px) {
-    width: 300px;
-  } 
-  @media screen and (max-width: 440px) {
-    width: 200px;
+    width: 100%;
   } 
 }
 
@@ -99,41 +89,25 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); 
   gap: 20px; 
+  margin: auto;
   grid-column: 2 / span 1; 
 
-@media screen and (max-width: 1030px) {
-  grid-template-columns: repeat(4, 1fr); 
-  width: 600px;
-} 
-@media screen and (max-width: 960px) {
-  grid-template-columns: repeat(3, 1fr);
-  width: 500px;
-} 
-@media screen and (max-width: 960px) {
-  grid-template-columns: repeat(3, 1fr); 
-  width: 400px;
-} 
-@media screen and (max-width: 960px) {
-  grid-column: 1 / span 1; 
-  margin: 0 auto;
-} 
 
-@media screen and (max-width: 650px) {
-  grid-column: 1 / span 1; 
-  margin: 0 auto;
-  grid-template-columns: repeat(2, 1fr); 
-  width: 300px;
-} 
-@media screen and (max-width: 440px) {
-  grid-column: 1 / span 1; 
-  margin: 0 auto;
-  grid-template-columns: repeat(1, 1fr); 
-  width: 200px;
-} 
 }
 
 .number {
-  width: 100%; 
-  height: 150px; 
-  background-color: #E3E3E3;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #e7e7e7;
+  align-items: center;
+  transition: 0.3s;
+  &:hover{
+    background-color: #cecece;;
 }
+}
+
+.productImage{
+  width: 400px;
+}
+

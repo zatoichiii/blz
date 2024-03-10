@@ -4,29 +4,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 30px 0;
 }
 
 .titleContainer {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  max-width: 1000px;
-  padding: 0 20px; /* Добавляем отступы по бокам */
-  box-sizing: border-box; /* Учитываем padding внутри ширины */
 }
 
 .faqContainer {
   width: 100%;
-  max-width: 1000px;
-  padding: 0 20px; /* Добавляем отступы по бокам */
-  box-sizing: border-box; /* Учитываем padding внутри ширины */
 }
 
-/* остальные стили */
 
 
 .title {

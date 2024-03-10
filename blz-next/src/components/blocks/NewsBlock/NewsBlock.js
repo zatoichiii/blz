@@ -3,7 +3,7 @@ import styles from "./NewsBlock.module.scss";
 import Show from "../../UI/Show";
 
 
-const NewsBlock = () => {
+const NewsBlock = ({news}) => {
     return (
         <div className={styles.container}>
             <Show>
@@ -16,7 +16,7 @@ const NewsBlock = () => {
                                 <img src='/images/Main/man4.png' alt="News Image" />
                             </div>
                             <div className={styles.headline}>
-                                <div className={styles.headlineTitle}>Открытие завода!</div>
+                                <div className={styles.headlineTitle}>Открытие завода</div>
                                 <div className={styles.headlineDate}>30.03.2024</div>
                                 <div className={styles.headlineDescription}>
                                     Мы с радостью готовы представить Вам открытие завода компании BLZ! Мы находимся по адресу... и готовы предложить Вам такие услуги как.... Ждем вас!

@@ -13,10 +13,10 @@ const Footer = () => {
             <div className={styles.text}>
                 <div className={styles.rows}>
                     <div className={styles.logo}>
-                        <img src="/images/logo.png" alt='' href={'/main'}/>
+                        <img src="/images/logo.png" alt='' href={'/'}/>
                     </div>
                     <div className={styles.row}>
-                        <a className={styles.footerItem} href={'/main'}>Главная</a>
+                        <a className={styles.footerItem} href={'/'}>Главная</a>
                         <a className={styles.footerItem} href={'/about'}>О нас</a>
                         <a className={styles.footerItem} href={'/technologies'}>Технологии</a>
                     </div>

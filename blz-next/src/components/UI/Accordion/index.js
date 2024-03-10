@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styles from "./Accordion.module.scss"
 
+
 const Accordion = ({ title, description }) => {
     const [open, setOpen] = useState(false)
     return (
@@ -17,6 +18,7 @@ const Accordion = ({ title, description }) => {
                 {description}
             </div>
         </div>
+
     );
 };
 

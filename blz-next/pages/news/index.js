@@ -12,10 +12,11 @@ import Banner_News from "@/src/components/blocks/Banner_News";
 export default function Page() {
     return (
         <div>
-
+              <Header/>
               <Banner_News/>
               <NewsBlock/>
-
+              <Call/>
+              <Footer/>
         </div>
     );
 };
