@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./ButtonsStyle.module.scss"
+import styles from "./Banner_News.module.scss"
 import Menu_Container from "../../UI/Menu_Container";
 import Show from "../../UI/Show";
 

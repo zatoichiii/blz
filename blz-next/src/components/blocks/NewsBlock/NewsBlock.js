@@ -24,7 +24,6 @@ const NewsBlock = ({news}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.line}></div>
                     </div>
                 </div>
             </Show>

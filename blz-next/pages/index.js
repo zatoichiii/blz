@@ -8,6 +8,7 @@ import Security from "@/src/components/blocks/Security";
 import FAQ from '@/src/components/blocks/FAQ';
 import NewsBlock from '@/src/components/blocks/NewsBlock/NewsBlock';
 import MyMap from '@/src/components/blocks/MyMap';
+import Client from '@/src/components/blocks/Client';
 
 
 export default function Page() {
@@ -22,7 +23,7 @@ export default function Page() {
             <Security/>
             <FAQ/>
             <NewsBlock/>
-            {/* <Client/> */}
+            <Client/>
 
         </div>
     );

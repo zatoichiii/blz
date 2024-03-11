@@ -3,7 +3,7 @@ import styles from "./Menu.module.scss";
 
 const Menu = ({ header, items, active, setActive }) => {
     return (
-        <div className={active ? `${styles.menu} ${styles.active}` : styles.menu}>
+        <div className={active ? `${styles.menu} ${styles.active}` : styles.menu} onClick={() => setActive(false)}>
             <div className={styles.menuContent}>
                 <div className={styles.menuHeader}>{header}</div>
                 <div className={styles.menuItems}>

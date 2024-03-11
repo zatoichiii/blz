@@ -1,46 +1,32 @@
-.container {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Inter', sans-serif;
 
-}
 
-.textBlocks {
-    width: 30%;
-    margin-right: 20px;
-}
-
-.textBlock {
-    margin-bottom: 20px;
-}
-
-.swiperr {
-    height: 70vh;
-    width: 30%;
-    padding: 20px;
-}
-
-.slider {
-    font-family: 'inter', sans-serif;
-    background: url("../../../../public/images/Lifts/lift-example.png") no-repeat;
-    background-size: cover; /* Растягиваем изображение на всю высоту контейнера */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.bodyWrapper{
     width: 100%;
-    height: 100%; /* Изменяем высоту контейнера слайда */
+    display: flex;
+    @media screen and (max-width: 1230px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+.wrapper{
+    font-family: 'Inter', sans-serif;
+    padding: 40px 0 20px 0;
+    position: relative;
+    font-size: 16px;
+    width: 60%;
+    font-weight: 300;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+
+    @media screen and (max-width: 1230px) {
+        width: auto;
+    }
 }
 
 
-
-
-.inner {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-.titlee{
-    width: 290px;
+.title{
+    width: 298px;
     font-size: 40px;
     font-weight: 700;
     color: #5382DF;
@@ -54,13 +40,25 @@
 
 }
 
-.descriptionn{
-    font-size: 16px;
+
+
+.subTittle{
+    font-size: 32px;
+    font-weight: 600;
+    width: 60%;
+    margin-bottom: 20px;
+    color: #5382DF;
+
+}
+.description{
+    padding: 1px 0;
+    font-size: 24px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
 }
-.buttonn{
+
+.button{
     background-color: #5382DF;
     width: 200px;
     text-align: center;
@@ -76,44 +74,30 @@
         background-color: #5e8eec; 
       }
 }
-.info {
-    width: auto;
+
+
+
+.slider{
+    overflow: hidden;
+    padding: 30px 0 60px 0;
+    width: 100%;
+    margin: auto;
+}
+.photoText {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    
-    @media screen and (max-width: 960px) {
-        width: 85%;
-    }
-
-    @media screen and (max-width: 825px) {
-        width: 85%;
-    }
-
-    @media screen and (max-width: 560px) {
-        width: 100%;
-        padding: 0;
-    }
+    color: rgb(0, 0, 0); 
+    padding: 30px 10px; 
+    margin: 10px;
+    font-size: 24px; 
+    font-weight: 700;
 }
 
-.title {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    color: black;
-    padding: 10px;
-
-    b {
-        color: #5382df;
-    }
-
-    @media screen and (max-width: 700px) {
-        font-size: 32px;
-    }
-
-    @media screen and (max-width: 560px) {
-        font-size: 28px;
-    }
+.photoTittle{
+    font-size: 16px;
+    font-weight: 500;
 }
+

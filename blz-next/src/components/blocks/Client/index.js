@@ -1,61 +1,78 @@
 import React from 'react';
-import styles from "./Client.module.scss"
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper'; 
-SwiperCore.use([Autoplay, Navigation, Pagination]); 
-import Show from "../../UI/Show";
-
+import styles from "./Client.module.scss";
+import Container from "../../UI/Container";
 import 'swiper/css';
+import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { Pagination, Navigation, Thumbs, Zoom, FreeMode } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-
-const Banner = () => {
+const Security = () => {
     return (
-        <div className={styles.container}>
-            <div className={styles.textBlocks}>
-                <div className={styles.textBlock}>
-                <div className={styles.titlee}>
-                                Безопасность
-                            </div>
-                            <div className={styles.descriptionn}>
-                                Разумно определите возможность сбоя в работе лифта. Когда лифт выходит из строя или выходит из строя из-за перебоев в подаче электроэнергии, система автоматически переключается и берет на себя основную систему управления. 
-                            </div>
-                </div>
-                <div className={styles.buttonn}>
+        <Container>
+            <div className={styles.bodyWrapper}>
+
+                <div className={styles.wrapper}>
+                    <div className={styles.text}>
+                        <div className={styles.title}>
+                            Наши Клиенты
+                        </div>
+                        <div className={styles.subTittle}>
+                            Компания BLZ предоставляет свои услуги во множество городов, не только по Ростовской области.
+                        </div>
+                        <div className={styles.description}>
+                            Предлагаем ознакомиться с некоторыми из них.
+                        </div>
+                        <a href='/products'>
+                        <div className={styles.button}>
                             Ассортимент
                         </div>
+                        </a>
+             
+                    </div>
+                </div>
+                <div className={styles.slider}>
+                <Swiper
+                 navigation={true}
+                 spaceBetween={50}
+                 slidesPerView={1.5}
+                 slidesPerGroup={1}
+                 modules={[FreeMode, Thumbs, Navigation]}
+                 onSlideChange={() => console.log('slide change')}
+             >
+                    <SwiperSlide>
+                    <img src={"/images/lifts-photo/1/0.png"}/>
+                    <div className={styles.photoText}>
+                        <div className={styles.photoTittle}>Пассажирский лифт</div>
+                        <div className={styles.photoLocation}>г.Ростов-на-Дону</div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <img src={"/images/lifts-photo/1/0.png"}/>
+                    <div className={styles.photoText}>
+                        <div className={styles.photoTittle}>Не Пассажирский лифт</div>
+                        <div className={styles.photoLocation}>г.Ростов-на-Дону</div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <img src={"/images/lifts-photo/1/0.png"}/>
+                    <div className={styles.photoText}>
+                        <div className={styles.photoTittle}>Пассажирский лифт</div>
+                        <div className={styles.photoLocation}>г.Ростов-на-Дону</div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <img src={"/images/lifts-photo/1/0.png"}/>
+                    <div className={styles.photoText}>
+                        <div className={styles.photoTittle}>Пассажирский лифт</div>
+                        <div className={styles.photoLocation}>г.Ростов-на-Дону</div>
+                    </div>
+                    </SwiperSlide>
+                </Swiper>
+                </div>
             </div>
-            <Swiper className={styles.swiperr}
-                slidesPerView={1}
-                loop={true}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
-                autoplay={{delay: 2000}}
-                navigation = {true}
-                spaceBetween={20}
-            >
-                <SwiperSlide className={styles.slider}>
-                    <div className={styles.inner}>
-                        <div className={styles.info}>
-                            
-                                <div className={styles.title}> г. Ростов-на-Дону</div>
-                            
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className={styles.slider}>
-                    <div className={styles.inner}>
-                        <div className={styles.info}>
-                            
-                                <div className={styles.title}>Г.Ростов-на-Дону</div>
-
-                        </div>
-                    </div>
-                </SwiperSlide>
-   
-            </Swiper>
-        </div>
+        </Container>
     );
 };
 
-export default Banner;
+export default Security;

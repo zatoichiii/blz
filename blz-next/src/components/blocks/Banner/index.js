@@ -16,7 +16,8 @@ const Banner = () => {
             loop={true}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
-            autoplay={{delay: 2000}}
+            autoplay={{delay: 3000}}
+            speed={1000}
         >
             <SwiperSlide className={styles.slider}>
                 <div className={styles.inner}>
