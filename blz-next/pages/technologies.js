@@ -6,6 +6,7 @@ import Banner_Technologies from "@/src/components/blocks/Banner_Technologies";
 import Experts from "@/src/components/blocks/Experts";
 import Info from "@/src/components/blocks/Info";
 import Possibility from "@/src/components/blocks/Possibility";
+import Client from '@/src/components/blocks/Client';
 
 
 
@@ -18,6 +19,7 @@ export default function Page() {
               <Experts/>
               <Info/>
               <Possibility/>
+              <Client/>
 
         </div>
     );
