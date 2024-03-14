@@ -21,20 +21,38 @@
     @media screen and (max-width: 1230px) {
         width: auto;
     }
+    @media screen and (max-width: 800px) {
+        padding: 0;
+    }
 }
 
 .elements {
-    margin: 0 auto; /* Убираем margin:auto; */
+    margin: 0 auto; 
     display: flex;
-    justify-content: center; /* Центрируем элементы горизонтально */
-    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+    justify-content: center; 
+    flex-wrap: wrap; 
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
 }
 
 .element {
-    width: 50%; /* Каждый элемент занимает 50% ширины родительского контейнера */
+    padding: 40px;
+    width: 50%; 
+    display: flex;
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 800px) {
+        padding: 20px;
+    }
+    @media screen and (max-width: 535px) {
+        padding: 20px 0px;
+    }
 }
 
 .Tittle{
+    display: flex;
     width: auto;
     padding: 0 0 10px 0;
     font-size: 40px;
@@ -42,7 +60,7 @@
     color: #5382DF;
     gap: 5px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-bottom: 5px solid #5382DF;
 
     @media screen and (max-width: 1230px) {
@@ -50,40 +68,28 @@
     }
 
     @media screen and (max-width: 830px) {
-        width: 570px;
+        width: 450px;
         font-size: 32px;
     }
-    @media screen and (max-width: 690px) {
+
+    @media screen and (max-width: 530px) {
         width: auto;
-    }
-
-    @media screen and (max-width: 445px) {
         font-size: 24px;
-        width: 230px;
     }
 
 }
 
+.elTittle{
+    font-weight: 600;
+    font-size: 22px;
+    color: #5382DF;
 
-
-
-.description{
-    width: 90%;
-    padding: 1px 0;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
 }
-
 .tick{
-    padding: 0 20px 0 0;
+    width: 120px;
     margin: auto;
+    padding: 0 20px 0 0;
 }
 .tick img{
-    width: 55px;
-}
-
-.element{
-    display: flex;
+    width: 120px;
 }

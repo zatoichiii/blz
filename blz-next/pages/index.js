@@ -25,7 +25,7 @@ export default function Page() {
             <Ticks/>
             <FAQ/>
             <NewsBlock/>
-            <Client/>
+            {/* <Client/> */}
 
         </div>
     );
