@@ -9,6 +9,7 @@ import FAQ from '@/src/components/blocks/FAQ';
 import NewsBlock from '@/src/components/blocks/NewsBlock/NewsBlock';
 import MyMap from '@/src/components/blocks/MyMap';
 import Client from '@/src/components/blocks/Client';
+import Ticks from '@/src/components/blocks/TIcks';
 
 
 export default function Page() {
@@ -21,6 +22,7 @@ export default function Page() {
             <Photos/>
             <Products/>
             <Security/>
+            <Ticks/>
             <FAQ/>
             <NewsBlock/>
             <Client/>

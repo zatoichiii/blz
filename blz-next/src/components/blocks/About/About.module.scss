@@ -1,6 +1,9 @@
-
-
-.bodyWrapper{
+.background{
+    background: url("../../../../public/images/Main/backofabout.png") no-repeat;
+    background-size: cover; /* Подгонка изображения по размеру */
+    background-position: center; /* Позиционирование изображения по центру */
+}
+.bodyWrapper {
     width: 100%;
     display: flex;
     padding: 50px 0;
@@ -11,7 +14,9 @@
         flex-wrap: wrap;
     }
 }
+
 .bodyWrapperShow{
+    
     opacity: 1;
     transition: all 1s;
     transform: translateY(0%);
@@ -50,12 +55,12 @@
 }
 
 .subtitle{
+    font-size: 16px;
     padding: 10px 0;
 }
 
 
 .description{
-    padding: 1px 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;

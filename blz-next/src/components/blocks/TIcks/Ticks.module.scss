@@ -1,0 +1,89 @@
+
+
+.bodyWrapper{
+    width: 100%;
+    display: flex;
+    margin: 40px auto;
+    @media screen and (max-width: 1230px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+.wrapper{
+    font-family: 'Inter', sans-serif;
+    padding: 40px 20px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    @media screen and (max-width: 1230px) {
+        width: auto;
+    }
+}
+
+.elements {
+    margin: 0 auto; /* Убираем margin:auto; */
+    display: flex;
+    justify-content: center; /* Центрируем элементы горизонтально */
+    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+}
+
+.element {
+    width: 50%; /* Каждый элемент занимает 50% ширины родительского контейнера */
+}
+
+.Tittle{
+    width: auto;
+    padding: 0 0 10px 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: #5382DF;
+    gap: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #5382DF;
+
+    @media screen and (max-width: 1230px) {
+        width: 710px;
+    }
+
+    @media screen and (max-width: 830px) {
+        width: 570px;
+        font-size: 32px;
+    }
+    @media screen and (max-width: 690px) {
+        width: auto;
+    }
+
+    @media screen and (max-width: 445px) {
+        font-size: 24px;
+        width: 230px;
+    }
+
+}
+
+
+
+
+.description{
+    width: 90%;
+    padding: 1px 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.tick{
+    padding: 0 20px 0 0;
+    margin: auto;
+}
+.tick img{
+    width: 55px;
+}
+
+.element{
+    display: flex;
+}

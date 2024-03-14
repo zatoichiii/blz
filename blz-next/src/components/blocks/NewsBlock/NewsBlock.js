@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from "./NewsBlock.module.scss";
 import Show from "../../UI/Show";
+import Container from '../../UI/Container';
 
 
 const NewsBlock = ({news}) => {
     return (
-        <div className={styles.container}>
+        <Container>
             <Show>
                 <div className={styles.bodyWrapper}>
                     <div className={styles.wrapper}>
@@ -27,7 +28,7 @@ const NewsBlock = ({news}) => {
                     </div>
                 </div>
             </Show>
-        </div>
+            </Container>
     );
 };
 

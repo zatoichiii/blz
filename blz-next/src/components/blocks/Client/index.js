@@ -6,10 +6,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation, Thumbs, Zoom, FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Show from '../../UI/Show';
 
 const Security = () => {
     return (
         <Container>
+            <Show>
             <div className={styles.bodyWrapper}>
 
                 <div className={styles.wrapper}>
@@ -71,6 +73,7 @@ const Security = () => {
                 </Swiper>
                 </div>
             </div>
+            </Show>
         </Container>
     );
 };

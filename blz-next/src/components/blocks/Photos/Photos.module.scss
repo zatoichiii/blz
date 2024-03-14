@@ -11,6 +11,8 @@
 }
 
 .bodywrapper {
+  
+  align-items: center;
   display: flex;
   flex-wrap: wrap; 
   justify-content: center; 
@@ -32,6 +34,7 @@
 
 
 .inner img {
+  width: 240px;
   transition: transform 0.3s ease;
 }
 
