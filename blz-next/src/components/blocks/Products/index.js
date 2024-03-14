@@ -3,20 +3,24 @@ import styles from "./Products.module.scss"
 import Container from "../../UI/Container";
 import Show from "../../UI/Show";
 import { products } from "@/productConfig";
+import _ from "lodash";
 
 
 const Products = () => {
     const [type, setType] = useState(products[0].type);
+    const folterTypes = () => {
+      return  _.uniqBy(products, 'type');
+    }
     
     return (
         <div className={styles.wrapper}>
             <Container>
-                <Show>
+                {/*<Show>*/}
                     <div className={styles.bodywrapper}>
                         <div className={styles.inner}>
                             <div className={styles.menu}>
                                 <div className={styles.tittle}>Ассортимент</div>
-                                {products.map((item) => (
+                                {folterTypes().map((item) => (
                                     <div key={item.type} onClick={() => setType(item.type)} className={styles.subtittle}>
                                         {item.type}
                                     </div>
@@ -25,16 +29,18 @@ const Products = () => {
                         </div>
                         <div className={styles.products}>
                             {products.filter((item) => item.type === type).map((itemLift, index) => (
-                                <div key={index} className={styles.product}>
+                                <a href={`/products/${itemLift.id}`} key={index} className={styles.product}>
                                     <img src={`${itemLift.imgPath}/0.png`} alt={itemLift.name} className={styles.productImage} />
                                     <div className={styles.description}>
-                                        <a href={`/products/${itemLift.id}`} className={styles.number}>{itemLift.name}</a>
+                                        <p className={styles.title}>{itemLift.name}</p>
+                                        <p className={styles.price}>{itemLift.price}</p>
+                                        <p className={styles.type}>{itemLift.type}</p>
                                     </div>
-                                </div>
+                                </a>
                             ))}
                         </div>
                     </div>
-                </Show>
+                {/*</Show>*/}
             </Container>
         </div>
     );

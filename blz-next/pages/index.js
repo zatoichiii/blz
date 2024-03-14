@@ -10,10 +10,13 @@ import NewsBlock from '@/src/components/blocks/NewsBlock/NewsBlock';
 import MyMap from '@/src/components/blocks/MyMap';
 import Client from '@/src/components/blocks/Client';
 import Ticks from '@/src/components/blocks/TIcks';
+import Head from "next/head";
 
 
 export default function Page() {
     return (
+        <>
+
         <div>
 
             <Banner/>
@@ -25,8 +28,9 @@ export default function Page() {
             <Ticks/>
             <FAQ/>
             <NewsBlock/>
-            {/* <Client/> */}
+            <Client/>
 
         </div>
+        </>
     );
 };

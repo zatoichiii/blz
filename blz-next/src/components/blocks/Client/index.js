@@ -4,7 +4,7 @@ import Container from "../../UI/Container";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination, Navigation, Thumbs, Zoom, FreeMode } from 'swiper';
+import {  Thumbs, FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Show from '../../UI/Show';
 
@@ -38,36 +38,44 @@ const Security = () => {
                  navigation={true}
                  spaceBetween={50}
                  slidesPerView={1.5}
-                 slidesPerGroup={1}
-                 modules={[FreeMode, Thumbs, Navigation]}
+                 slidesPerGroup= {1}
+                 modules={[FreeMode, Thumbs]}
                  onSlideChange={() => console.log('slide change')}
              >
                     <SwiperSlide>
+                        <div>
                     <img src={"/images/lifts-photo/1/0.png"}/>
                     <div className={styles.photoText}>
                         <div className={styles.photoTittle}>Пассажирский лифт</div>
-                        <div className={styles.photoLocation}>г.Ростов-на-Дону</div>
+                        <div className={styles.photoLocation}>г.Ростов-на-Дону1</div>
                     </div>
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide>
+                        <div>
                     <img src={"/images/lifts-photo/1/0.png"}/>
                     <div className={styles.photoText}>
                         <div className={styles.photoTittle}>Не Пассажирский лифт</div>
-                        <div className={styles.photoLocation}>г.Ростов-на-Дону</div>
+                        <div className={styles.photoLocation}>г.Ростов-на-Дону2</div>
                     </div>
+                </div>
                     </SwiperSlide>
                     <SwiperSlide>
+                        <div>
                     <img src={"/images/lifts-photo/1/0.png"}/>
                     <div className={styles.photoText}>
                         <div className={styles.photoTittle}>Пассажирский лифт</div>
-                        <div className={styles.photoLocation}>г.Ростов-на-Дону</div>
+                        <div className={styles.photoLocation}>г.Ростов-на-Дону3</div>
+                    </div>
                     </div>
                     </SwiperSlide>
                     <SwiperSlide>
+                        <div>
                     <img src={"/images/lifts-photo/1/0.png"}/>
                     <div className={styles.photoText}>
                         <div className={styles.photoTittle}>Пассажирский лифт</div>
-                        <div className={styles.photoLocation}>г.Ростов-на-Дону</div>
+                        <div className={styles.photoLocation}>г.Ростов-на-Дону4</div>
+                    </div>
                     </div>
                     </SwiperSlide>
                 </Swiper>

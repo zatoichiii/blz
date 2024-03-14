@@ -11,11 +11,10 @@ import Products from "@/src/components/blocks/Products";
 export default function Page() {
     return (
         <div>
-            <Header/>
+
               <Banner_Products/>
               <Products/>
-              <Call/>
-              <Footer/>
+
         </div>
     );
 };
