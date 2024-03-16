@@ -23,7 +23,7 @@ const NewsElement = ({news}) => {
                                     {news.all}                            </div>
                         </div>
                         <div className={styles.images}>
-                        <img src={`${news.imgPath}/0.png`} alt="Фото" className={styles.productImage} />
+                        <img src={`${news.imgPath}/0.png`} alt={news.name}/>
                     </div>
                     </div>
 
