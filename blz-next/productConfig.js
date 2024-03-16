@@ -2,7 +2,7 @@ export const products = [
     {
         id: "1",
         name: "Лифт1",
-        type: "passajir",
+        type: "Пассажирские лифты",
         price: "120 000",
         imgPath: "images/lifts-photo/1",
         imgCount: 5,
@@ -14,7 +14,7 @@ export const products = [
     {
         id: "2",
         name: "Лифт1",
-        type: "passajir",
+        type: "Пассажирские лифты",
         price: "120 000",
         imgPath: "images/lifts-photo/1",
         imgCount: 5,
@@ -26,7 +26,7 @@ export const products = [
     {
         id: "3",
         name: "Лифт1",
-        type: "passajir",
+        type: "Пассажирские лифты",
         price: "120 000",
         imgPath: "images/lifts-photo/1",
         imgCount: 5,
@@ -38,7 +38,7 @@ export const products = [
     {
         id: "4",
         name: "Лифт1",
-        type: "passajir",
+        type: "Пассажирские лифты",
         price: "120 000",
         imgPath: "images/lifts-photo/1",
         imgCount: 5,
@@ -49,7 +49,7 @@ export const products = [
     },
     {
         id: "5",
-        type: "gruzz",
+        type: "Грузовые лифты",
         name: "Лифт2",
         imgPath: "img/",
         imgCount: 5,

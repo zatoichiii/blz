@@ -24,8 +24,8 @@ export default function Page() {
             <About/>
             <Photos/>
             <Products/>
-            <Security/>
             <Ticks/>
+            <Security/>
             <FAQ/>
             <NewsBlock/>
             <Client/>

@@ -9,17 +9,19 @@ const Product = ({lift}) => {
                 <Show>
                 <div className={styles.bodyWrapper}>
                 <div className={styles.images}>
-                        <img src={"/images/Technologies/elevator.png"}/>
+                <img src={`${lift.imgPath}/0.png`} alt={lift.name} className={styles.productImage} />
                     </div>
                     <div className={styles.wrapper}>
                         <div className={styles.text}>
                             <div className={styles.title}>
                                 {lift.name}
                             </div>
-                            <div className={styles.numbers}>Серийный номер:</div>                            
-                            <div className={styles.numbers}>Продукт:</div>
-                            <div className={styles.numbers}>Ключевое слово:</div>
+                            <div className={styles.numbers}>Серийный номер: {lift.serialNumber}</div>                            
+                            <div className={styles.numbers}>Продукт: {lift.type}</div>
+                            <div className={styles.numbers}>Ключевое слово: {lift.keyWord}</div>
+                            <a href='/contacty'>
                             <div className={styles.button}>Отправить сообщение</div>
+                            </a>
                             <div className={styles.button}>Консультация:+7(999)999-99-99</div>
                             <div className={styles.description}>Характеристики </div>
                             <div className={styles.description}>{lift.characteristics}</div>

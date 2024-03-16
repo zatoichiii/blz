@@ -15,7 +15,7 @@ const Products = () => {
     return (
         <div className={styles.wrapper}>
             <Container>
-                {/*<Show>*/}
+                <Show>
                     <div className={styles.bodywrapper}>
                         <div className={styles.inner}>
                             <div className={styles.menu}>
@@ -39,8 +39,9 @@ const Products = () => {
                                 </a>
                             ))}
                         </div>
+
                     </div>
-                {/*</Show>*/}
+                </Show>
             </Container>
         </div>
     );
