@@ -55,18 +55,19 @@
 }
 
 .button{
-    background-color: #5382DF;
+    background-color: #ffffff;
     width: 200px;
     text-align: center;
     margin: 20px 0;
     padding: 10px 0;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 24px;
     font-weight: 200;
-    border: 2px solid #5382DF;
+    border: 2px solid #5e8eec;
     cursor: pointer;
     transition: 0.3s;
     &:hover {
+        color: rgb(255, 255, 255);
         background-color: #5e8eec; 
       }
 }

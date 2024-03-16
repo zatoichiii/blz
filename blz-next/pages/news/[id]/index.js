@@ -1,13 +1,14 @@
 import React from 'react';
+import NewsElemnt from "@/src/components/blocks/NewsElement";
 import Banner_News from '@/src/components/blocks/Banner_News';
-import NewsBlock from '@/src/components/blocks/NewsBlock/NewsBlock';
 import {news} from "@/newsConfig";
 
 export default function  ProductPage({news}) {
     return (
         <div>
             <Banner_News/>
-            <div>{news.id}</div>
+            <NewsElemnt news={news} />
+
         </div>
     );
 };

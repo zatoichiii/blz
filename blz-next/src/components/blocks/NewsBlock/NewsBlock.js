@@ -22,7 +22,7 @@ const NewsBlock = () => {
                                     <div className={styles.headlineTitle}>{item.title}</div>
                                     <div className={styles.headlineDate}>{item.data}</div>
                                     <div className={styles.headlineDescription}>
-                                        {item["words"]}
+                                        {item["subtittle"]}
                                     </div>
                                 </div>
                             </a>
