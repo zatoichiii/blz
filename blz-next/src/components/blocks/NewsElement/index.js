@@ -12,6 +12,7 @@ const NewsElement = ({news}) => {
                 <div className={styles.bodyWrapper}>
 
                     <div className={styles.wrapper}>
+                    <a href="javascript:history.back()"> ❮ Назад</a>
                         <div className={styles.text}>
                             <div className={styles.title}>
                                 {news.title}
