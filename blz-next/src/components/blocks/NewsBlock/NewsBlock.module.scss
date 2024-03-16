@@ -23,6 +23,7 @@
 }
 
 .title {
+    
     width: 170px;
     font-size: 40px;
     font-weight: 700;
@@ -33,12 +34,16 @@
 }
 
 .news {
+    
+    padding: 20px 0;
     text-decoration: none;
     width: auto;
     display: flex;
     cursor: pointer;
     transition: 0.3s;
     color: black;
+    border-bottom: 1px solid;
+
     &:hover {
         background-color: #c9c9c9;
     }

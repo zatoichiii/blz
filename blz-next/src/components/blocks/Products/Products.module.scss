@@ -79,6 +79,7 @@
 }
 
 .products {
+
   width: auto;
   display: flex;
   gap: 20px; 
@@ -89,10 +90,17 @@
 }
 
 .product{
+   text-decoration: none;
+  color: #000000;
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 30%;
+  padding: 5px;
+  transition: 0.3s;
+    &:hover{
+    background-color: rgba($color: #000000, $alpha: 0.2);;
+}
 }
 
 .title{
@@ -102,11 +110,12 @@
 .price{
   font-size: 18px;
   font-weight: 700;
+  color: #5382DF;
 }
 
 .type{
   font-size: 16px;
-  color: #cccccc;
+  color: #747474;
 }
 
 .number {
