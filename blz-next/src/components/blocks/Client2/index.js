@@ -4,11 +4,11 @@ import Container from "../../UI/Container";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import {Thumbs, FreeMode} from 'swiper';
+import {Thumbs, FreeMode, Navigation} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import Show from '../../UI/Show';
 
-const Client = () => {
+const Client2 = () => {
     return (
         <Container>
             <Show>
@@ -40,7 +40,8 @@ const Client = () => {
                             spaceBetween={50}
                             slidesPerView={1.5}
                             slidesPerGroup={1}
-                            modules={[FreeMode, Thumbs]}
+                            modules={[FreeMode, Thumbs, Navigation ]}
+
                             onSlideChange={() => console.log('slide change')}
                         >
                             <SwiperSlide>
@@ -87,4 +88,4 @@ const Client = () => {
     );
 };
 
-export default Client;
+export default Client2;

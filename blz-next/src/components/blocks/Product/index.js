@@ -9,7 +9,7 @@ const Product = ({lift}) => {
                 <Show>
                 <div className={styles.bodyWrapper}>
                 <div className={styles.images}>
-                <img src={`${lift.imgPath}/0.png`} alt={lift.name} className={styles.productImage} />
+                <img src={`/${lift.imgPath}/0.png`} alt={lift.name} className={styles.productImage} />
                     </div>
                     <div className={styles.wrapper}>
                         <div className={styles.text}>

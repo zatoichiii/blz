@@ -11,7 +11,7 @@
 }
 .wrapper{
     font-family: 'Inter', sans-serif;
-    padding: 40px 20px;
+    padding: 40px 0;
     position: relative;
     font-size: 16px;
     font-weight: 300;
@@ -27,29 +27,24 @@
 }
 
 .elements {
-    margin: 0 auto; 
+    margin: 40px auto 0 auto;
     display: flex;
     justify-content: center; 
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    gap: 40px;
     @media screen and (max-width: 1200px) {
         flex-direction: column;
     }
 }
 
 .element {
-    padding: 40px;
-    width: 50%; 
+    width: 48%;
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 1200px) {
         width: 100%;
     }
-    @media screen and (max-width: 800px) {
-        padding: 20px;
-    }
-    @media screen and (max-width: 535px) {
-        padding: 20px 0px;
-    }
+
 }
 
 .Tittle{

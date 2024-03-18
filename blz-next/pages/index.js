@@ -4,13 +4,24 @@ import Stats from "@/src/components/blocks/Stats";
 import About from "@/src/components/blocks/About";
 import Photos from "@/src/components/blocks/Photos";
 import Products from "@/src/components/blocks/Products";
-import Security from "@/src/components/blocks/Security";
 import FAQ from '@/src/components/blocks/FAQ';
 import NewsBlock from '@/src/components/blocks/NewsBlock/NewsBlock';
-import MyMap from '@/src/components/blocks/MyMap';
-import Client from '@/src/components/blocks/Client';
 import Ticks from '@/src/components/blocks/TIcks';
-import Head from "next/head";
+import Client from "@/src/components/blocks/Client";
+
+const about = {
+    title: "Производство BLZ",
+    description: "Унаследуйте дух шведского индустриализма и создайте модель лифтов высокого класса. <br/> Разумно определите возможность сбоя в работе лифта. Когда лифт выходит из строя или выходит из строя из-за перебоев в подаче электроэнергии, система автоматически переключается и берет на себя основную систему управления. <br/> Без помощи обслуживающего и аварийно-спасательногоперсонала машина поднимается на ближайший этаж.После остановки дверь лифта откроется автоматически, так что оказавшиеся в ловушке пассажиры смогут безопасно выйти из лифта.",
+    image: "/images/Main/fabric.png",
+    href: "/about",
+}
+
+const security = {
+    title: "Безопасность",
+    description: "Разумно определите возможность сбоя в работе лифта. Когда лифт выходит из строя или выходит из строя из-за перебоев в подаче электроэнергии, система автоматически переключается и берет на себя основную систему управления. <br/> Без помощи обслуживающего и аварийно-спасательногоперсонала машина поднимается на ближайший этаж.После остановки дверь лифта откроется автоматически, так что оказавшиеся в ловушке пассажиры смогут безопасно выйти из лифта.",
+    image: "/images/Main/security.png",
+    href: "/technologies",
+}
 
 
 export default function Page() {
@@ -21,15 +32,14 @@ export default function Page() {
 
             <Banner/>
             <Stats/>
-            <About/>
+            <About item={about}/>
             <Photos/>
             <Products/>
             <Ticks/>
-            <Security/>
+            <About item={security}/>
             <FAQ/>
             <NewsBlock/>
             <Client/>
-
         </div>
         </>
     );
