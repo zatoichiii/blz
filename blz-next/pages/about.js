@@ -7,6 +7,7 @@ import Tittle from "@/src/components/blocks/Tittle";
 import Facts from "@/src/components/blocks/Facts";
 import Background from "@/src/components/blocks/Background";
 import Documents from "@/src/components/blocks/Documents";
+import DocumentsMy from "@/src/components/blocks/DocumentsMy";
 
 export default function Page() {
     return (
@@ -15,7 +16,8 @@ export default function Page() {
              <Banner_About/>
              <Tittle/>
              <Facts/>
-             <Documents/>
+             {/* <Documents/> */}
+             <DocumentsMy/>
              <Background/>
 
 

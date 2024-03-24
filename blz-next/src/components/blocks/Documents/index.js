@@ -1,16 +1,13 @@
 import React, {useEffect, useRef, useState} from 'react';
 import Show from "../../UI/Show";
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 
-// import required modules
 import { Pagination, Navigation, Thumbs, Zoom, FreeMode } from 'swiper';
 import styles from "./Documents.module.scss"
 import Container from "../../UI/Container";
