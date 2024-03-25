@@ -8,7 +8,7 @@ import {news} from "@/newsConfig";
 const NewsBlock = () => {
     return (
         <Container>
-            <Show>
+            {/* <Show> */}
                 <div className={styles.bodyWrapper}>
                     <div className={styles.wrapper}>
                         <div className={styles.title}>Новости</div>
@@ -30,7 +30,7 @@ const NewsBlock = () => {
 
                     </div>
                 </div>
-            </Show>
+            {/* </Show> */}
             </Container>
     );
 };

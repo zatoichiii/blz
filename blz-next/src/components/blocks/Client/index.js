@@ -10,8 +10,8 @@ import Show from '../../UI/Show';
 
 const Client = () => {
     return (
-        <Container>
-            <Show>
+        <Container >
+            {/* <Show> */}
                 <div className={styles.bodyWrapper}>
 
                     <div className={styles.wrapper}>
@@ -82,7 +82,7 @@ const Client = () => {
                         </Swiper>
                     </div>
                 </div>
-            </Show>
+            {/* </Show> */}
         </Container>
     );
 };
