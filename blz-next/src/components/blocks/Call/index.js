@@ -35,18 +35,16 @@ const Call = () => {
                     <div className={styles.tittle}>
                         Оставьте заявку на обратный звонок или задайте вопрос
                     </div>
-                    <form  onSubmit={handleSubmit} className={styles.form}>
+                    <form  onSubmit={handleSubmit}>
                         <label htmlFor="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Имя" onChange={handleChange}/>
+                        <input className={styles.form} type="text" id="name" name="name" placeholder="Имя" onChange={handleChange}/>
                     
                         <label htmlFor="phone"></label>
-                        <input type="tel" id="phone" name="phone" placeholder="Телефон" onChange={handleChange}/>
+                        <input   className={styles.form} type="tel" id="phone" name="phone" placeholder="Телефон" onChange={handleChange}/>
                     
                         <div className={styles.bigform}>
-                        {/* <label htmlFor="question"></label> */}
                             <textarea className={styles.textareea} name="question" placeholder="Вопрос" onChange={handleChange}></textarea>
                         </div>
-            
                         <button type="submit" className={styles.button}>Отправить заявку</button>
                     </form>
                 </div>

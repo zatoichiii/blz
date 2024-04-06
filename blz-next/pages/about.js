@@ -16,7 +16,6 @@ export default function Page() {
              <Banner_About/>
              <Tittle/>
              <Facts/>
-             {/* <Documents/> */}
              <DocumentsMy/>
              <Background/>
 

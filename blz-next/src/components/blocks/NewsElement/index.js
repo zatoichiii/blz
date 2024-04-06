@@ -7,7 +7,6 @@ import Show from "../../UI/Show";
 const NewsElement = ({news}) => {
     return (
         <Container>
-                <Show>
 
                 <div className={styles.bodyWrapper}>
 
@@ -24,12 +23,11 @@ const NewsElement = ({news}) => {
                                     {news.all}                            </div>
                         </div>
                         <div className={styles.images}>
-                        <img src={`${news.imgPath}/0.png`} alt={news.name}/>
+                        <img src={`/${news.imgPath}/0.png`} alt={news.name}/>
                     </div>
                     </div>
 
                 </div>
-                </Show>
                 </Container>
     );
 };

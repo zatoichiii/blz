@@ -38,8 +38,9 @@ export default function Page() {
             <Ticks/>
             <About item={security}/>
             <FAQ/>
-            <NewsBlock/>
             <Client/>
+            <NewsBlock/>
+
         </div>
         </>
     );

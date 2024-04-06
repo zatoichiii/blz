@@ -15,29 +15,28 @@
     display: flex;
     margin: 0 auto;
     flex-direction: column;
-
+    @media screen and (max-width: 700px) {
+        padding: 20px 0;
+        width: 100%;
+     }
 
 }
-
-
-
 
 
 .title{
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
     gap: 5px;
-
+    @media screen and (max-width: 700px) {
+        font-size: 22px;
+     }
 
 }
-
-
 
 .data{
     margin: 5px 0 20px 0;
 }
 .description{
-    padding: 1px 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -63,6 +62,7 @@
 }
 
 .images{
+    justify-content: center;
     align-items: center;
     margin: 40px auto;
     display: flex;
@@ -70,5 +70,6 @@
 
 }
 .images img {
+    max-width: 600px;
     width: 100%;
 }
