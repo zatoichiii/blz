@@ -23,7 +23,7 @@ const Banner = () => {
                 <div className={styles.inner}>
                     <div className={styles.info}>
                     <Show>
-                        <div className={styles.title}> <b>BLZ</b> - Белорусский лифтовый завод это выбор профессионалов.</div>
+                        <div className={styles.title}> <b>BLZ</b> - Белорусский лифтовый завод это выбор профессионалов!</div>
                     </Show>
                     </div>
                 </div>
