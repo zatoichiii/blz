@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from "./Footer.module.scss"
 import Container from "../../UI/Container";
-import Show from "../../UI/Show";
 
 
 const Footer = () => {
@@ -26,10 +25,10 @@ const Footer = () => {
                         <a className={styles.footerItem} href={'/news'}>Новости</a>
                     </div>
                     <div className={styles.row}>
-                        <a className={styles.footerItem} href={'#phone'}>Телефон: 7 999 999 99 99</a>
-                        <a className={styles.footerItem} href={'#phone'}>WhatsApp:7 999 999 99 99</a>
-                        <a className={styles.footerItem} href={'#phone'}>Telegram:7 999 999 99 99</a>
-                        <a className={styles.footerItem} href={'#phone'}>Email:example@mail.ru</a>
+                    <a className={styles.footerItem} href="tel:+79281502060">Телефон: +7 (928) 150-20-60</a>
+                    <a className={styles.footerItem} href="https://wa.me/79281502060">WhatsApp: +7 (928) 150-20-60</a>
+                    <a className={styles.footerItem} href="https://t.me/+79281502060">Telegram: +7 (928) 150-20-60</a>
+                    <a className={styles.footerItem} href="mailto:support@blz.ru">Email: support@blz.ru</a>
                     </div>
                     <div className={styles.row}>
                     <div className={styles.map}>

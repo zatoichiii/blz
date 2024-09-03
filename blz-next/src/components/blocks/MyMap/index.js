@@ -7,7 +7,7 @@ const MyMap = () => {
     return (
         <Container>
             <YMaps>
-                <Map defaultState={{ center: [55.75, 37.57], zoom: 9 }} width="100%" height="300px"/>
+                <Map defaultState={{ center: [47.288774, 39.710063], zoom: 12 }} width="100%" height="300px"/>
             </YMaps>
         </Container>
     );

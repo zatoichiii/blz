@@ -22,7 +22,7 @@ const Product = ({lift}) => {
                             <a href='/contacty'>
                             <div className={styles.button}>Отправить сообщение</div>
                             </a>
-                            <div className={styles.button}>Консультация:+7(999)999-99-99</div>
+                            <div className={styles.button}>Консультация:+7 (928) 150-20-60</div>
                             <div className={styles.description}>Характеристики </div>
                             <div className={styles.description}>{lift.characteristics}</div>
                         </div>

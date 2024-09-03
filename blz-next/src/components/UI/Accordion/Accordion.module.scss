@@ -1,7 +1,7 @@
 .accordion{
 
     padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Добавляем тень: смещение по горизонтали, смещение по вертикали, размытие, цвет */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     width: 30%;
     @media screen and (max-width: 1200px) {
         width: 48%;
@@ -27,10 +27,9 @@
         border-radius: 50%;
         margin-left: auto;
         display: flex;
-        color: white;
+        color: #5382DF;
         justify-content: center;
         justify-items: end;
-        background-color: #5382DF;
         display: flex;
         font-size: 30px;
         transition: 1s;
@@ -40,9 +39,7 @@
     }
 
     
-    .plus:hover{
-        background-color: #5c87df;
-    }
+
 
     .minus{
         transition: 1s;

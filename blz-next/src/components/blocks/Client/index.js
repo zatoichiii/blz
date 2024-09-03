@@ -45,40 +45,32 @@ const Client = () => {
                         >
                             <SwiperSlide>
                                 <div className={styles.slideItem}>
-                                    <img src={"/images/lifts-photo/1/0.png"}/>
+                                    <img src={"/images/bc6b624e-73bb-43bd-a800-41844c846f79.jpg"}/>
                                     <div className={styles.photoText}>
                                         <div className={styles.photoTittle}>Пассажирский лифт</div>
-                                        <div className={styles.photoLocation}>г.Ростов-на-Дону1</div>
+                                        <div className={styles.photoLocation}>г.Ростов-на-Дону</div>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className={styles.slideItem}>
-                                    <img src={"/images/lifts-photo/1/0.png"}/>
+                                    <img src={"/images/f5fd84e3-47fa-4df4-aae9-43f383e63633.jpg"}/>
                                     <div className={styles.photoText}>
                                         <div className={styles.photoTittle}>Не Пассажирский лифт</div>
-                                        <div className={styles.photoLocation}>г.Ростов-на-Дону2</div>
+                                        <div className={styles.photoLocation}>г.Ростов-на-Дону</div>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className={styles.slideItem}>
-                                    <img src={"/images/lifts-photo/1/0.png"}/>
+                                    <img src={"/images/e1a84a63-2864-4fad-8e6e-95cfdb7173dd.jpg"}/>
                                     <div className={styles.photoText}>
                                         <div className={styles.photoTittle}>Пассажирский лифт</div>
-                                        <div className={styles.photoLocation}>г.Ростов-на-Дону3</div>
+                                        <div className={styles.photoLocation}>г.Ростов-на-Дону</div>
                                     </div>
                                 </div>
                             </SwiperSlide>
-                            <SwiperSlide>
-                                <div className={styles.slideItem}>
-                                    <img src={"/images/lifts-photo/1/0.png"}/>
-                                    <div className={styles.photoText}>
-                                        <div className={styles.photoTittle}>Пассажирский лифт</div>
-                                        <div className={styles.photoLocation}>г.Ростов-на-Дону4</div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
+
                         </Swiper>
                     </div>
                 </div>

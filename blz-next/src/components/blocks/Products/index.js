@@ -39,10 +39,11 @@ const Products = () => {
                                 </a>
                             ))}
                         </div>
-
                     </div>
                 {/* </Show> */}
+
             </Container>
+
         </div>
     );
 };

@@ -14,9 +14,9 @@ const Menu = ({ header, items, active, setActive }) => {
                     ))}
                 </div>
                 <div className={styles.footer}>
-                    <div className={styles.footerEl}>whatsapp : 8 000 000 00 00</div>
-                    <div className={styles.footerEl}>telegram: 8 000 000 00 00</div>
-                    <div className={styles.footerEl}>email: example@mail.ru</div>
+                    <div className={styles.footerEl}>whatsapp : <br/>+7 (928) 150-20-60</div>
+                    <div className={styles.footerEl}>telegram: <br/>+7 (928) 150-20-60</div>
+                    <div className={styles.footerEl}>email: <br/> support@blz.ru</div>
                 </div>
             </div>
         </div>

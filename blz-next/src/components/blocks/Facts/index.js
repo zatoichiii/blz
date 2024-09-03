@@ -14,13 +14,13 @@ const Facts = () => {
                     <div className={styles.image}> <img src='/images/About/first people.png'></img></div>
                     <div className={styles.info}> 
                     <div className={styles.tittle}>
-                        Оглавление
+                    Безопасность лифтов
                     </div>
                     <div className={styles.text}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                     - соответствует требованиям ТР ТС 011/2011 безопасность лифтов и гостам по которым он выпущен .
+Необходимо отметь что лифт оснащен устройствами безопасности - ловители, ограничитель скорости, замки дверей шахты , буфер кабины и противовеса , система защиты от неконтролируемого движение кабины и превышение движение кабины. 
+Лифты  в соответствии  с руководством по эксплуатации подвергаются ежемесячному осмотру , а также от зависимости моделей лифта и требований завода изготовителя ежеквартальному полугодовому или годовому техническому обслуживанию.
+Лифты проходят проверку периодического технического освидетельствования ежегодного.
                     </div>
                     </div>
                     </div>
@@ -31,36 +31,14 @@ const Facts = () => {
                     
                     <div className={styles.info}> 
                     <div className={styles.tittle}>
-                        Оглавление
+                    Достижения Лифтового Завода
                     </div>
                     <div className={styles.text}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
+                    Широкий ассортимент продукции: Мы являемся   официальными дилером лифтовых заводов -Гомельской лифтовой завод GLZ, Серпуховский лифтостроительный завод, Siglen Elevator , Fuji Elevator.
+                    Мы предлагаем разнообразные модели лифтов, включая пассажирские, грузовые и специализированные решения. Мы учитываем потребности различных секторов, от жилых зданий до промышленных объектов.                    </div>
                     </div>
 
                     <div className={styles.image}> <img src='/images/About/people2.png'></img></div>
-
-                    </div>
-                    </Show>
-                    <Show>
-                    <div className={styles.wrapper}>
-                    <div className={styles.image}> <img src='/images/About/people3.png'></img></div>
-                    <div className={styles.info}> 
-                    <div className={styles.tittle}>
-                        Оглавление
-                    </div>
-                    <div className={styles.text}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                    </div>
-
-                    
 
                     </div>
                     </Show>

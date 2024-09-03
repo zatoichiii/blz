@@ -13,28 +13,16 @@ const Faces = () => {
                 </Show>
                 <div className={styles.gridWrapper}>
                 <div className={styles.gridItem}>
-                    <img src="https://thumbs.dreamstime.com/b/бизнесмен-говоря-на-те-ефоне-в-автомоби-е-58517156.jpg" alt="Person 1" />
-                    <div className={styles.name}>Иванов Иван Иванович</div>
-                    <div className={styles.position}>Position 1</div>
-                    <div className={styles.phone}>+123 456 7890</div>
+                    <img src="/images/dbbaf65d-3e6c-4a89-996d-7511e477366f.jpg" alt="Person 1" />
+                    <div className={styles.name}>Чермантеев Владимир Петрович</div>
+                    <div className={styles.position}>Генеральный Директор</div>
+                    <div className={styles.phone}>+7 (928) 150-20-60</div>
                 </div>
                 <div className={styles.gridItem}>
-                    <img src="https://thumbs.dreamstime.com/b/бизнесмен-говоря-на-те-ефоне-в-автомоби-е-58517156.jpg" alt="Person 1" />
-                    <div className={styles.name}>Иванов Иван Иванович</div>
-                    <div className={styles.position}>Position 1</div>
-                    <div className={styles.phone}>+123 456 7890</div>
-                </div>
-                <div className={styles.gridItem}>
-                    <img src="https://thumbs.dreamstime.com/b/бизнесмен-говоря-на-те-ефоне-в-автомоби-е-58517156.jpg" alt="Person 1" />
-                    <div className={styles.name}>Иванов Иван Иванович</div>
-                    <div className={styles.position}>Position 1</div>
-                    <div className={styles.phone}>+123 456 7890</div>
-                </div>
-                <div className={styles.gridItem}>
-                    <img src="https://thumbs.dreamstime.com/b/бизнесмен-говоря-на-те-ефоне-в-автомоби-е-58517156.jpg" alt="Person 1" />
-                    <div className={styles.name}>Иванов Иван Иванович</div>
-                    <div className={styles.position}>Position 1</div>
-                    <div className={styles.phone}>+123 456 7890</div>
+                    <img src="/images/speaker_azzurro_1.png" alt="Person 1" />
+                    <div className={styles.name}>Нозин Александр Александрович </div>
+                    <div className={styles.position}>Директор </div>
+                    <div className={styles.phone}>+7 (928) 174-41-79</div>
                 </div>
                     </div>
                     </div>

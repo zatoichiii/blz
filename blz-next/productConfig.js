@@ -1,60 +1,119 @@
 export const products = [
     {
         id: "1",
-        name: "Лифт1",
-        type: "Пассажирские лифты",
-        price: "От 120 000",
-        imgPath: "images/lifts-photo/1",
+        name: "SL-1036",
+        type: "Бизнес класс",
+        price: " По запросу",
+        imgPath: "images/lifts-photo/2",
         imgCount: 5,
-        serialNumber: "1234",
-        keyWord: "word",
-        characteristics: "Side car panel: Fire-proof wood + hairline stainless steel panel, hairline stainless steel\n" +
-            "Rear car panel: Mirror stainless steel on both sides and art glass decorative lamination in the middle Front car panel: mirror stainless steel Ceiling: SGLT-18-006, mirror stainless steel, lighting, LED flush light panelCar bottom: SGLD-18-006, wear-resistant PVC floorCOP: SGL-COP-12, integrated mirror stainless steelButton: HA1Q01",
+        serialNumber: "1036",
+        keyWord: "Задняя стенка: нержавеющая сталь ",
+        characteristics: "- Задняя стенка: нержавеющая сталь\n- Боковая стенка: нержавеющая сталь\n- Передняя стенка: нержавеющая сталь\n- Двери: нержавеющая сталь\n- Потолок: окрашенная сталь SL - 2036, интегрированный (номер цвета: B505P)\n- Источник света: светодиодный прожектор, светодиодный люминесцентный свет\n- Пол: SL - 4028P ПВХ узор\n"
     },
     {
         id: "2",
-        name: "Лифт1",
-        type: "Пассажирские лифты",
-        price: "От 120 000",
-        imgPath: "images/lifts-photo/1",
+        name: "SL-1072",
+        type: "Бизнес класс",
+        price: " По запросу",
+        imgPath: "images/lifts-photo/3",
         imgCount: 5,
-        serialNumber: "1234",
-        keyWord: "word",
-        characteristics: "Side car panel: Fire-proof wood + hairline stainless steel panel, hairline stainless steel\n" +
-            "Rear car panel: Mirror stainless steel on both sides and art glass decorative lamination in the middle Front car panel: mirror stainless steel Ceiling: SGLT-18-006, mirror stainless steel, lighting, LED flush light panelCar bottom: SGLD-18-006, wear-resistant PVC floorCOP: SGL-COP-12, integrated mirror stainless steelButton: HA1Q01",
+        serialNumber: "1072",
+        keyWord: "Задняя стенка: нержавеющая сталь",
+        characteristics: "- Задняя стенка: нержавеющая сталь\n- Боковая стенка: нержавеющая сталь\n- Передняя стенка: нержавеющая сталь\n- Двери: нержавеющая сталь\n- Потолок: окрашенная сталь SL - 2017, интегрированный (номер цвета: B505P)\n- Источник света: светодиодный прожектор, светодиодный люминесцентный свет\n- Пол: SL - 4028P ПВХ узор\n"
     },
     {
         id: "3",
-        name: "Лифт1",
-        type: "Пассажирские лифты",
-        price: "От 120 000",
-        imgPath: "images/lifts-photo/1",
+        name: "SL-1134",
+        type: "Премиум класс",
+        price: " По запросу",
+        imgPath: "images/lifts-photo/4",
         imgCount: 5,
-        serialNumber: "1234",
-        keyWord: "word",
-        characteristics: "Side car panel: Fire-proof wood + hairline stainless steel panel, hairline stainless steel\n" +
-            "Rear car panel: Mirror stainless steel on both sides and art glass decorative lamination in the middle Front car panel: mirror stainless steel Ceiling: SGLT-18-006, mirror stainless steel, lighting, LED flush light panelCar bottom: SGLD-18-006, wear-resistant PVC floorCOP: SGL-COP-12, integrated mirror stainless steelButton: HA1Q01",
+        serialNumber: "1134",
+        keyWord: "Задняя стенка: SL - 8045",
+        characteristics: " Задняя стенка: SL - 8045 с зеркальным травлением, тончайшая нержавеющая сталь, Боковая стенка: зеркальная нержавеющая сталь, тонкая нержавеющая сталь, Передняя стенка: нержавеющая сталь, Двери: нержавеющая сталь, Потолок: зеркальная нержавеющая сталь SL - 2227J, Источник света: светодиодный потолочный светильник, светодиодный люминесцентный свет, Пол: SL - 4173P ПВХ узор"
     },
+
     {
         id: "4",
-        name: "Лифт1",
-        type: "Пассажирские лифты",
-        price: "От 120 000",
-        imgPath: "images/lifts-photo/1",
+        name: "SL-1095",
+        type: "Премиум класс",
+        price: " По запросу",
+        imgPath: "images/lifts-photo/5",
         imgCount: 5,
-        serialNumber: "1234",
-        keyWord: "word",
-        characteristics: "Side car panel: Fire-proof wood + hairline stainless steel panel, hairline stainless steel\n" +
-            "Rear car panel: Mirror stainless steel on both sides and art glass decorative lamination in the middle Front car panel: mirror stainless steel Ceiling: SGLT-18-006, mirror stainless steel, lighting, LED flush light panelCar bottom: SGLD-18-006, wear-resistant PVC floorCOP: SGL-COP-12, integrated mirror stainless steelButton: HA1Q01",
+        serialNumber: "1095",
+        keyWord: "Задняя стенка: титан",
+        characteristics: "Задняя стенка: титан, нержавеющая сталь, титан многофункциональная плита из нержавещей стали SL - 8008, Боковая стенка: титановая зеркальная нержавеющая сталь, титан многофункциональная плита из нержавеющей стали SL - 8008, Передняя стенка: титановое зеркало из нержавеющей стали, Двери: титановая зеркальная нержавеющая сталь, Потолок: титановое зеркало SL - 2078TJ из нержавеющей стали, Перила: SL - 3501TJ Титановое зеркало, тройная нержавеющая сталь, Пол: SL - 4012P ПВХ узор"
     },
+
     {
         id: "5",
-        type: "Грузовые лифты",
-        name: "Лифт2",
-        imgPath: "img/",
+        name: "SL-1135",
+        type: "Премиум класс",
+        price: " По запросу",
+        imgPath: "images/lifts-photo/6",
         imgCount: 5,
-        serialNumber: "1345",
-        keyWord: "key",
-        characteristics: "да",
-    }
+        serialNumber: "1135",
+        keyWord: "Задняя стенка: титан",
+        characteristics: "Задняя стенка: титан, нержавеющая сталь, титан многофункциональная плита из нержавещей стали SL - 8008, Боковая стенка: титановая зеркальная нержавеющая сталь, титан многофункциональная плита из нержавеющей стали SL - 8008, Передняя стенка: титановое зеркало из нержавеющей стали, Двери: титановая зеркальная нержавеющая сталь, Потолок: титановое зеркало SL - 2078TJ из нержавеющей стали, Перила: SL - 3501TJ Титановое зеркало, тройная нержавеющая сталь, Пол: SL - 4012P ПВХ узор"
+    },
+
+    {
+        id: "5",
+        name: "SL-1136",
+        type: "Премиум класс",
+        price: " По запросу",
+        imgPath: "images/lifts-photo/7",
+        imgCount: 5,
+        serialNumber: "1136",
+        keyWord: "Задняя стенка: цветной узор",
+        characteristics: "Задняя стенка: цветной узор металл SL - 8055, дымчато-серый и модель из нержавеющей стали, Боковая стенка: дымчато-серая нержавеющая сталь, Передняя стенка: дымчато-серая нержавеющая сталь, Двери: дымчато-серая нержавеющая сталь, Потолок: окрашенная сталь SL - 2053 (черный), Перила: SL - 3302BE черный титановый блонд узор квадратная труба, Источник света: светодиодная ткань, Пол: мрамор SL - 4082D"   
+    },
+
+    {
+        id: "6",
+        name: "Кабина Эконом",
+        type: "Эконом класс",
+        price: " По запросу",
+        imgPath: "images/lifts-photo/8",
+        imgCount: 5,
+        serialNumber: "01",
+        keyWord: "Задняя стенка: зеркало в половину роста",
+        characteristics: "Задняя стенка: зеркало в половину роста, Потолок: нержавеющая сталь с лазерной резкой, С-10, Покрытие пола: линолеум Tarkett MODA 121600, Аксессуары: зеркало, поручень, Поручень: никелерованная нержавеющая сталь, Боковые стены: краска порошковая RAL 7035"    
+    },
+
+    {
+        id: "7",
+        name: "Кабина Бизнес",
+        type: "Эконом класс",
+        price: "По запросу",
+        imgPath: "images/lifts-photo/9",
+        imgCount: 5,
+        serialNumber: "03",
+        keyWord: "Задняя стенка: зеркало в половину роста",
+        characteristics: "Задняя стенка: зеркало в половину роста, Потолок: нержавеющая сталь с лазерной резкой, Покрытие пола: линолеум Tarkett MODA 121606, Аксессуары: зеркало, поручень, Поручень: никелерованная нержавеющая сталь, Боковые стены: нержавеющая сталь Deco"    
+        },
+
+    {
+            id: "8",
+            name: "Кабина Бизнес",
+            type: "Эконом класс",
+            price: "По запросу",
+            imgPath: "images/lifts-photo/10",
+            imgCount: 5,
+            serialNumber: "04",
+            keyWord: "Задняя стенка: зеркало в половину роста",
+            characteristics: "Задняя стенка: зеркало в половину роста, Потолок: нержавеющая сталь с лазерной резкой, Покрытие пола: гранит \"Покостовский\", Аксессуары: зеркало, поручень, Поручень: никелерованная нержавеющая сталь, Боковые стены: нержавеющая сталь \"Deco\" с полированными вставками",
+    },
+
+    {
+        id: "9",
+        name: "SL - 1037",
+        type: "Бизнес класс",
+        price: "По запросу",
+        imgPath: "images/lifts-photo/11",
+        imgCount: 5,
+        serialNumber: "04",
+        keyWord: "Верхний и нижний купол: нержавеющая сталь",
+        characteristics: "Верхний и нижний купол: нержавеющая сталь, Панорамная стена: многослойное безопасное стекло, Стенка: нержавеющая сталь, Дверь: нержавеющая сталь и ламинированное стекло, Потолок: стальной лист SL - 2053 с напылением (номер цвета: B505P), Перила: SL - 3703 вертикальная круглая труба, Пол: SL - 4027P ПВХ узор"
+ },
 ]
