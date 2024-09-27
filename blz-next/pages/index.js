@@ -8,6 +8,9 @@ import FAQ from '@/src/components/blocks/FAQ';
 import NewsBlock from '@/src/components/blocks/NewsBlock/NewsBlock';
 import Ticks from '@/src/components/blocks/TIcks';
 import Client from "@/src/components/blocks/Client";
+import AboutGLz from '@/src/components/blocks/AbotGlz';
+import Download from '@/src/components/blocks/Download';
+import OurClients from '@/src/components/blocks/OurClients';
 
 const about = {
     title: "Производство BLZ",
@@ -32,6 +35,9 @@ export default function Page() {
 
             <Banner/>
             <Stats/>
+            <AboutGLz/>
+            <Download/>
+            <OurClients/>
             <About item={about}/>
             <Photos/>
             <Products/>

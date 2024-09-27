@@ -1,0 +1,72 @@
+
+.wrapper {
+  padding-top: 50px;
+  background-size: cover;
+  background-attachment: fixed; 
+  font-family: 'inter', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+.bodywrapper{
+
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+    width: auto;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 670px) {
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+.inner{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tittle{
+  width: fit-content;
+  font-size: 40px;
+  font-weight: 700;
+  color: #5382DF;
+  gap: 5px;
+  border-bottom: 5px solid #5382DF;
+  margin-bottom: 20px;
+  line-height: 45px;
+  @media screen and (max-width: 960px) {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: none;
+  }
+}
+
+.partners{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  img{
+    pointer-events: all;
+    height: auto;
+  }
+}
+
+.imgPart {
+  width: 180px; /* задайте желаемую ширину */
+  height: auto;
+  object-fit: contain; /* сохраняет пропорции изображения */
+  filter: grayscale(1);
+  transition: 0.5s;
+
+}
+
+.imgPart:hover {
+  filter: grayscale(0);
+  scale: (1.1);
+}
