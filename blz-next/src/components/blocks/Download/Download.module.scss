@@ -27,18 +27,24 @@
   margin: auto;
   padding: 40px;
   text-align: center;
+  display: flex;
   @media screen and (max-width: 1434px) {
     font-size: 14px;
   }
   @media screen and (max-width: 960px) {
     width: auto;
     padding: 15px;
-  }
-
-
-  
+  }  
 }
 
+.ssylky{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 .background{
   background-color: #5382DF;
   padding: 40px 20px;
