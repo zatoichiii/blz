@@ -21,7 +21,7 @@ export default async function handler(req, res) {
       from: `Slepov103@yandex.ru`,
       to: 'support@blz-lifts.ru, azovtsevnikita@mail.ru, Cherman.vova@yandex.ru',
       subject: 'New message from contact form',
-      text: question,
+      text: `Name: ${name}\nPhone: ${phone}\nQuestion: ${question}`,
     });
 
     console.log('Message sent: %s', info.messageId);
