@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     // Send mail with defined transport object
     const info = await transporter.sendMail({
       from: `Slepov103@yandex.ru`,
-      to: 'azovtzevnikita@mail.ru',
+      to: 'support@blz-lifts.ru',
       subject: 'New message from contact form',
       text: question,
     });
