@@ -28,7 +28,7 @@ const Footer = () => {
                     <a className={styles.footerItem} href="tel:+79281502060">Телефон: +7 (928) 150-20-60</a>
                     <a className={styles.footerItem} href="https://wa.me/79281502060">WhatsApp: +7 (928) 150-20-60</a>
                     <a className={styles.footerItem} href="https://t.me/+79281502060">Telegram: +7 (928) 150-20-60</a>
-                    <a className={styles.footerItem} href="mailto:support@blz.ru">Email: support@blz.ru</a>
+                    <a className={styles.footerItem} href="mailto:support@blz-lifts.ru">Email: support@blz-lifts.ru</a>
                     </div>
                     <div className={styles.row}>
                     <div className={styles.map}>

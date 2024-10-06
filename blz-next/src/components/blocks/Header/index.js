@@ -38,7 +38,10 @@ const Index = () => {
             <Menu_Container>
                 <div className={styles.inner}>
                     <a href={'/'} className={styles.logo}>
-                        <img src={"/images/logo.png"} alt="Logo" />
+                        <img src={"/images/logo2.png"} alt="Logo" />
+                        <img className={styles.newLogo} src={"/images/logo3.png"} alt="Logo" />
+
+                        
                     </a>
                     <div className={styles.headerItems}>
                         <a href={"/"} className={styles.headerItem}>Главная</a>

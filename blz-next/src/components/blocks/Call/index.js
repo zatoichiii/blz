@@ -6,11 +6,12 @@ import axios from 'axios';
 
 
 const Call = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        phone: '',
-        question: ''
-      });
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    mail: '',
+    question: ''
+  });
 
       const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -42,6 +43,9 @@ const Call = () => {
                         <label htmlFor="phone"></label>
                         <input   className={styles.form} type="tel" id="phone" name="phone" placeholder="Телефон" onChange={handleChange}/>
                     
+                        <label htmlFor="mail"></label>
+                        <input className={styles.form} type="email" id="mail" name="mail" placeholder="Почта" onChange={handleChange}/>
+
                         <div className={styles.bigform}>
                             <textarea className={styles.textareea} name="question" placeholder="Вопрос" onChange={handleChange}></textarea>
                         </div>

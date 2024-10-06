@@ -19,7 +19,7 @@ const Faces = () => {
                     <div className={styles.phone}>+7 (928) 150-20-60</div>
                 </div>
                 <div className={styles.gridItem}>
-                    <img src="/images/speaker_azzurro_1.png" alt="Person 1" />
+                    <img src="/images/nozin.jpg" alt="Person 1" />
                     <div className={styles.name}>Нозин Александр Александрович </div>
                     <div className={styles.position}>Директор </div>
                     <div className={styles.phone}>+7 (928) 174-41-79</div>

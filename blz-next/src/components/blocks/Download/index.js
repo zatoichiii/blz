@@ -1,19 +1,11 @@
 import styles from "./Download.module.scss";
 import Container from "../../UI/Container";
 import Show from "../../UI/Show";
+import Link from 'next/link';
+
 
 const Download = () => {
-  const handleDownload = () => {
-    fetch(process.env.PUBLIC_URL + "/public/glz.pdf")
-      .then(response => response.blob())
-      .then(blob => {
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'glz.pdf';
-        a.click();
-      });
-  };
+
 
   return (
     <div className={styles.wrapper}>
@@ -30,6 +22,11 @@ const Download = () => {
             <div className={styles.desc}>Опросный лист</div>
             <button>Скачать</button>
             </a>
+            <Link className={styles.ssylka} href="/glz.pdf">
+            <div className={styles.desc}>Каталог Смарт-технологии</div>
+            <button>Скачать</button>
+
+      </Link>
             </div>
           </div>
         </Show>

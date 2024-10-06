@@ -16,8 +16,8 @@ const Banner = () => {
             loop={true}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
-            autoplay={{delay: 3000}}
-            speed={1000}
+            autoplay={{delay: 10000}}
+            speed={2000}
         >
             <SwiperSlide className={styles.slider}>
                 <div className={styles.inner}>
@@ -33,7 +33,7 @@ const Banner = () => {
                 <div className={styles.inner}>
                     <div className={styles.info}>
                     <Show>
-                        <div className={styles.title}>Наш завод - первый производитель лифтов класса <b>А1</b> в Ростове-на-Дону и Ростовской области
+                        <div className={styles.title}>Наш завод - первый дистрибьютер лифтов класса <b>А1</b> в Ростове-на-Дону и Ростовской области
                         </div>
                         </Show>
                     </div>

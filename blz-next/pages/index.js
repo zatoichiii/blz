@@ -45,7 +45,7 @@ export default function Page() {
             <About item={security}/>
             <FAQ/>
             <Client/>
-            <NewsBlock/>
+            {/* <NewsBlock/> */}
 
         </div>
         </>

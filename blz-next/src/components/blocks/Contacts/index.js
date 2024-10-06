@@ -18,7 +18,7 @@ const Contacts = () => {
                     <div className={styles.text}>
                     <div className={styles.tittle}>Адрес</div>
                     <div className={styles.subtittle}>Ростов-на-Дону</div>
-                    <div className={styles.subtittle}>Микрорайон Северный</div>
+                    <div className={styles.subtittle}>Вавилова 74Б</div>
                     </div>
                     </div>
                     <div className={styles.contact}>
@@ -45,7 +45,7 @@ const Contacts = () => {
                     </div>
                     <div className={styles.text}>
                     <div className={styles.tittle}>Электронная почта</div>
-                    <div className={styles.subtittle}>support@blz.ru</div>
+                    <div className={styles.subtittle}>support@blz-lifts.ru</div>
                     </div>
                     </div>
 

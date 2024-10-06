@@ -27,12 +27,15 @@
   align-items: center;
   img{
     width: 87px;
-    height: 69px;
+    height: auto;
+  }
+  .newLogo{
+    width: 80px;
   }
   @media screen and (max-width: 220px) {
     img{
       width: 60px;
-      height: 50px;
+      height: auto;
     }
   }
 }
@@ -42,7 +45,7 @@
   display: flex;
   gap: 25px;
   align-items: center;
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1000px) {
     display: none;
   }
 }
@@ -79,7 +82,7 @@
   align-items: right;
   cursor: pointer;
   display: none;
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1000px) {
       display: flex;
       flex-direction: column;
       justify-content: space-around;

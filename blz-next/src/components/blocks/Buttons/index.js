@@ -23,9 +23,9 @@ const Buttons = () => {
     </a>
 </div>
 <div className={styles.element}>
-    <a className={styles.elementOf} href="mailto:support@blz.ru">
+    <a className={styles.elementOf} href="mailto:support@blz-lifts.ru">
         <img src="/images/mail.png" className={styles.elementImg}/>
-        <div className={styles.text}>support@blz.ru</div>
+        <div className={styles.text}>support@blz-lifts.ru</div>
     </a>
 </div>
 
