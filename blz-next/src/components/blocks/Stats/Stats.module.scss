@@ -1,53 +1,211 @@
-
 .wrapper {
-  background: url("../../../../public/images/Main/backgorund_city.png") no-repeat;
-  background-size: cover;
-  background-attachment: fixed; 
-  font-family: 'inter', sans-serif;
-  color: white;
-}
-
-.bodywrapper{
-
-  display: flex;
-  flex-direction: row;
-  @media screen and (max-width: 960px) {
-    flex-direction: column;
-    width: auto;
-    margin: 0 auto;
-  }
-  @media screen and (max-width: 670px) {
-    flex-direction: column;
-    margin: auto;
-  }
-}
-
-.inner{
-  margin: auto;
-  padding: 40px;
-  text-align: center;
-  @media screen and (max-width: 1434px) {
-    font-size: 14px;
-  }
-  @media screen and (max-width: 960px) {
-    width: auto;
-    padding: 15px;
-  }
-
-
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+  background-color: #2b6cb0;
   
-}
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../../../public/images/Main/backgorund_city.png") no-repeat center/cover;
+    opacity: 0.1;
+    z-index: 0;
+  }
 
-.number{
-  padding: 10px;
-  font-size: 40px;
-  font-weight: 800;
-  @media screen and (max-width: 1434px) {
-    font-size: 32px;
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px 0;
   }
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
 
+.content {
+  position: relative;
+  z-index: 2;
+}
 
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0 20px;
 
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
 
+  @media (max-width: 480px) {
+    font-size: 1.75rem;
+    padding: 0 15px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: 1024px) {
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 10px;
+  }
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: default;
+  min-width: 0;
+
+  &:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    margin: 0 5px;
+    padding: 1.2rem;
+  }
+}
+
+.icon {
+  color: #2b6cb0;
+  margin-bottom: 1.5rem;
+  stroke-width: 1.5;
+  width: 40px;
+  height: 40px;
+
+  @media (max-width: 480px) {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 1rem;
+  }
+}
+
+.value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a365d;
+  margin-bottom: 0.5rem;
+  
+  span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 0.3rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.75rem;
+    
+    span {
+      font-size: 1rem;
+    }
+  }
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+
+  @media (max-width: 480px) {
+    font-size: 1.1rem;
+  }
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.5;
+
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  // Новые медиа-запросы для контроля количества колонок
+  @media (min-width: 769px) and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+
+  @media (max-width: 768px) and (min-width: 481px) {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 0 15px;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 10px;
+  }
+}
+
+.card {
+  // Остальные стили без изменений
+  @media (min-width: 769px) and (max-width: 1024px) {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) and (min-width: 481px) {
+    min-height: 240px;
+    padding: 1.5rem;
+  }
+}

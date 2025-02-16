@@ -1,30 +1,35 @@
-import React from 'react';
-import NewsElemnt from "@/src/components/blocks/NewsElement";
-import Banner_News from '@/src/components/blocks/Banner_News';
-import {news} from "@/newsConfig";
+import NewsElement from "@/src/components/blocks/NewsElement";
+import BannerNews from "@/src/components/blocks/Banner_News";
+import { getNewsById, getAllNewsIds } from '@/lib/news';
 
-export default function  ProductPage({news}) {
+export default function NewsPage({ news }) {
     return (
         <div>
-            <Banner_News/>
-            <NewsElemnt news={news} />
-
+            <BannerNews />
+            <NewsElement news={news} />
         </div>
     );
-};
+}
 
-export async function getServerSideProps(context) {
-    const id = context.query.id
-    const media = news.filter((item)=>item.id === id) || {}
-    if(media.length === 0){
+export async function getStaticPaths() {
+    const paths = await getAllNewsIds();
+    return {
+        paths,
+        fallback: 'blocking'
+    };
+}
+
+export async function getStaticProps({ params }) {
+    const news = await getNewsById(params.id);
+    
+    if (!news) {
         return {
-            redirect: {
-                destination: `/`,
-                permanent: true,
-            },
+            notFound: true,
         }
     }
-    return{
-        props: {news: media[0]}
-    }
+
+    return {
+        props: { news },
+        revalidate: 3600 // ISR - обновление каждые 60 минут
+    };
 }

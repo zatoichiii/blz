@@ -1,78 +1,116 @@
 import React, { useEffect, useState } from 'react';
-import styles from "./Stats.module.scss"
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
+import styles from "./Stats.module.scss";
 import Container from "../../UI/Container";
-import Show from "../../UI/Show";
+import * as FeatherIcons from 'react-feather';
+
+const StatsData = [
+  { 
+    icon: 'Building', 
+    value: 67, 
+    title: "Лет на рынке", 
+    suffix: "г", 
+    description: "Опыт работы в лифтостроении" 
+  },
+  { 
+    icon: 'Globe', 
+    value: 89, 
+    title: "География", 
+    suffix: "+", 
+    description: "Регионов присутствия в ЕАЭС" 
+  },
+  { 
+    icon: 'Settings', 
+    value: 50, 
+    title: "Моделей", 
+    suffix: "+", 
+    description: "Лифтового оборудования" 
+  },
+  { 
+    icon: 'Shield', 
+    value: 60, 
+    title: "Гарантия", 
+    suffix: " мес", 
+    description: "Расширенная гарантия на услуги" 
+  },
+  { 
+    icon: 'Award', 
+    value: 1, 
+    title: "Эксперт", 
+    suffix: " в Ростове", 
+    description: "Официальный дистрибьютор ГЛЗ" 
+  },
+];
 
 const Stats = () => {
-    const [count1, setCount1] = useState(0);
-    const [count67, setCount67] = useState(0);
-    const [count89, setCount89] = useState(0);
-    const [count50, setCount50] = useState(0);
-    const [count60, setCount60] = useState(0);
+  const [counters, setCounters] = useState(StatsData.map(() => 0));
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const parallax = document.querySelector('.wrapper');
-            if (parallax) {
-                let scrollPosition = window.pageYOffset;
-                parallax.style.backgroundPositionY = scrollPosition * 0.7 + 'px'; 
-            }
-        };
+  useEffect(() => {
+    if (inView) {
+      StatsData.forEach((stat, index) => {
+        let current = 0;
+        const interval = setInterval(() => {
+          current += Math.ceil(stat.value / 40);
+          if (current >= stat.value) {
+            current = stat.value;
+            clearInterval(interval);
+          }
+          setCounters(prev => {
+            const newCounters = [...prev];
+            newCounters[index] = current;
+            return newCounters;
+          });
+        }, 30);
+      });
+    }
+  }, [inView]);
 
-        window.addEventListener('scroll', handleScroll);
+  return (
+    <div className={styles.wrapper} ref={ref}>
+      <div className={styles.overlay} />
+      <Container>
+        <motion.div 
+          className={styles.content}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: inView ? 1 : 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className={styles.title}>Профессионалы лифтостроения</h2>
+          <div className={styles.grid}>
+            {StatsData.map((stat, index) => {
+              const IconComponent = FeatherIcons[stat.icon];
+              
+              if (!IconComponent) {
+                console.error(`Иконка "${stat.icon}" не найдена в react-feather`);
+                return null;
+              }
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+              return (
+                <motion.div 
+                  key={stat.title}
+                  className={styles.card}
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  style={{ minHeight: '100%' }} // Добавляем это свойство
 
-    useEffect(() => {
-        const counters = [
-            { id: 1, count: 1, setState: setCount1 },
-            { id: 67, count: 67, setState: setCount67 },
-            { id: 89, count: 89, setState: setCount89 },
-            { id: 50, count: 50, setState: setCount50 },
-            { id: 60, count: 60, setState: setCount60 },
-        ];
-
-        counters.forEach((counter) => {
-            let currentCount = 0;
-            const intervalId = setInterval(() => {
-                if (currentCount < counter.count) {
-                    currentCount += 1;
-                    counter.setState(currentCount);
-                } else {
-                    clearInterval(intervalId);
-                }
-            }, 45);
-        });
-    }, []);
-
-    return (
-        <div className={styles.wrapper}>
-            <Container>
-                <Show>
-                    <div className={styles.bodywrapper}>
-                        <div className={styles.inner}>
-                            <div className={styles.number}>{count1}</div> Первый дистрибьютер <br/> Гомельского Лифтового Завода лифтов А1 класса в Ростове и Ростовской области
-                        </div>
-                        <div className={styles.inner}>
-                            <div className={styles.number}>{count67}</div>  Объединение лучших мировых достижений в области лифтостроения
-                        </div>
-                        <div className={styles.inner}>
-                            <div className={styles.number}>{count89}</div>  Продукция поставляется во все субъекты РФ и государства ЕАЭС 
-                        </div>
-                        <div className={styles.inner}>
-                            <div className={styles.number}>{count50}</div>  Мы готов предложить более 50 различных моделей лифтового оборудования 
-                        </div>
-                        <div className={styles.inner}>
-                            <div className={styles.number}>до {count60}</div>  Поставка + Монтаж + Обслуживание = Расширенная гарантия
-                        </div>
-                    </div>
-                </Show>
-            </Container>
-        </div>
-    );
+                >
+                  <IconComponent className={styles.icon} size={40} />
+                  <div className={styles.value}>
+                    {counters[index]}
+                    <span>{stat.suffix}</span>
+                  </div>
+                  <h3 className={styles.cardTitle}>{stat.title}</h3>
+                  <p className={styles.description}>{stat.description}</p>
+                </motion.div>
+              )
+            })}
+          </div>
+        </motion.div>
+      </Container>
+    </div>
+  );
 };
 
 export default Stats;

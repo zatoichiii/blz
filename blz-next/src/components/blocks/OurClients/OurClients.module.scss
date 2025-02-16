@@ -1,84 +1,180 @@
+// OurClients.module.scss
 
 .wrapper {
-  padding-top: 50px;
-  background-size: cover;
-  background-attachment: fixed; 
-  font-family: 'inter', sans-serif;
-  color: rgb(0, 0, 0);
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
 }
 
-
-.bodywrapper{
-
-  display: flex;
-  flex-direction: row;
-  @media screen and (max-width: 960px) {
-    flex-direction: column;
-    width: auto;
-    margin: 0 auto;
-  }
-  @media screen and (max-width: 670px) {
-    flex-direction: column;
-    margin: auto;
-  }
-}
-
-.inner{
+.content {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
   width: 100%;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #1a365d;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  animation: fadeInUp 0.8s ease-out;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #5382DF;
+    animation: lineExpand 0.6s ease-out 0.3s backwards;
+  }
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #718096;
+  margin-bottom: 3rem;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.logoWall {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  animation: scaleIn 0.6s ease-out;
+}
+
+.logoItem {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-.tittle{
-  width: fit-content;
-  font-size: 40px;
-  font-weight: 700;
-  color: #5382DF;
-  gap: 5px;
-  border-bottom: 5px solid #5382DF;
-  margin-bottom: 20px;
-  line-height: 45px;
-  @media screen and (max-width: 960px) {
-    width: 100%;
-    font-size: 24px;
-    text-align: center;
-    border-bottom: none;
+  justify-content: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(83,130,223,0.1);
+  min-height: 100px;
+  will-change: transform;
+  
+  &:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(83,130,223,0.2);
   }
 }
 
-.partners{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-  img{
-    pointer-events: all;
-    height: auto;
+.logoImage {
+  width: 100%;
+  height: auto;
+  max-width: 160px;
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.8;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  .logoItem:hover & {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1.05);
   }
 }
 
-.imgPartNew{
-  width: 220px; 
-  height: auto;
-  object-fit: contain; 
-  transition: 0.5s;
+// Анимации
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.imgPart {
-  width: 180px; 
-  height: auto;
-  object-fit: contain; 
-  transition: 0.5s;
-
+@keyframes lineExpand {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 60px;
+    opacity: 1;
+  }
 }
 
-.imgPart:hover {
-  filter: grayscale(0);
-  scale: (1.1);
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
+// Медиа-запросы остаются без изменений
+@media (max-width: 1480px) {
+  .content {
+    padding: 0 30px;
+  }
+}
 
-.imgPartNew:hover {
-  filter: grayscale(0);
-  scale: (1.1);
+@media (max-width: 1024px) {
+  .logoWall {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 4rem 0;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .logoWall {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .logoItem {
+    min-height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .logoWall {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+  
+  .logoImage {
+    max-width: 120px;
+  }
 }

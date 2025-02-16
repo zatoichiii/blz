@@ -5,13 +5,11 @@ import {Map, YMaps, Placemark} from '@pbe/react-yandex-maps';
 
 const MyMap = () => {
     return (
-        <Container>
             <YMaps>
                 <Map defaultState={{ center: [47.283395, 39.683841], zoom: 12 }} width="100%" height="300px">
                     <Placemark geometry={[47.283395, 39.683841]} />
                 </Map>
             </YMaps>
-        </Container>
     );
 };
 

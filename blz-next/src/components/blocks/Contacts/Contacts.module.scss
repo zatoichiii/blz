@@ -1,6 +1,7 @@
 
 
 .bodyWrapper{
+    font-family: "Inter", sans-serif;
     width: 100%;
     display: flex;
     margin: 40px auto;
@@ -60,4 +61,87 @@
 .ico img {
     width: 100%; 
     height: auto;
+}
+
+.bodyWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px auto;
+    
+
+}
+
+.contactsColumn {
+    flex: 1;
+    max-width: 600px;
+}
+
+.formColumn {
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    @media screen and (max-width: 1230px) {
+        margin-top: 50px
+    }
+
+}
+
+.formWrapper {
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+    @media screen and (max-width: 768px) {
+        padding: 20px;
+    }
+}
+
+.formTitle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5382DF;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formInput {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+
+    &:focus {
+        outline: none;
+        border-color: #5382DF;
+        box-shadow: 0 0 0 3px rgba(83, 130, 223, 0.2);
+    }
+}
+
+.submitButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #5382DF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #456fbf;
+    }
 }

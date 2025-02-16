@@ -1,49 +1,65 @@
-import React, { useState } from 'react';
-import styles from "./Products.module.scss"
+import React from 'react';
+import { motion } from 'framer-motion';
+import styles from "./Products.module.scss";
 import Container from "../../UI/Container";
-import Show from "../../UI/Show";
 import { products } from "@/productConfig";
-import _ from "lodash";
+import { ArrowRight } from 'react-feather'; // Или любая другая иконка
 
+const Products = () => {    
+    const cardVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 }
+    };
 
-const Products = () => {
-    const [type, setType] = useState(products[0].type);
-    const folterTypes = () => {
-      return  _.uniqBy(products, 'type');
-    }
-    
+    const buttonVariants = {
+        hidden: { opacity: 0, x: 20 },
+        hover: { opacity: 1, x: 0 }
+    };
+
     return (
         <div className={styles.wrapper}>
             <Container>
-                {/* <Show> */}
-                    <div className={styles.bodywrapper}>
-                        <div className={styles.inner}>
-                            <div className={styles.menu}>
-                                <div className={styles.tittle}>Ассортимент</div>
-                                {folterTypes().map((item) => (
-                                    <div key={item.type} onClick={() => setType(item.type)} className={styles.subtittle}>
-                                        {item.type}
+                <div className={styles.productsContainer}>
+                    <h2 className={styles.mainTitle}>Наша продукция</h2>
+                    <div className={styles.productsGrid}>
+                        {products.map((product, index) => (
+                            <motion.a 
+                                href={`/products/${product.id}`} 
+                                key={index} 
+                                className={styles.productCard}
+                                variants={cardVariants}
+                                initial="hidden"
+                                animate="visible"
+                                transition={{ delay: index * 0.1 }}
+                            >
+                                <div className={styles.imageWrapper}>
+                                    <img 
+                                        src={`${product.imgPath}/0.png`} 
+                                        alt={product.name} 
+                                        className={styles.productImage} 
+                                        loading="lazy"
+                                    />
+                                    <motion.div 
+                                        className={styles.detailsButton}
+                                        variants={buttonVariants}
+                                        whileHover="hover"
+                                    >
+                                        <span>Подробнее</span>
+                                        <ArrowRight size={18} />
+                                    </motion.div>
+                                </div>
+                                <div className={styles.productInfo}>
+                                    <h3 className={styles.productTitle}>{product.name}</h3>
+                                    <p className={styles.productType}>{product.type}</p>
+                                    <div className={styles.priceContainer}>
+                                        <span className={styles.price}>{product.price} ₽</span>
                                     </div>
-                                ))}
-                            </div>
-                        </div>
-                        <div className={styles.products}>
-                            {products.filter((item) => item.type === type).map((itemLift, index) => (
-                                <a href={`/products/${itemLift.id}`} key={index} className={styles.product}>
-                                    <img src={`${itemLift.imgPath}/0.png`} alt={itemLift.name} className={styles.productImage} />
-                                    <div className={styles.description}>
-                                        <p className={styles.title}>{itemLift.name}</p>
-                                        <p className={styles.price}>{itemLift.price}</p>
-                                        <p className={styles.type}>{itemLift.type}</p>
-                                    </div>
-                                </a>
-                            ))}
-                        </div>
+                                </div>
+                            </motion.a>
+                        ))}
                     </div>
-                {/* </Show> */}
-
+                </div>
             </Container>
-
         </div>
     );
 };

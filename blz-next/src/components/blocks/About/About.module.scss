@@ -1,106 +1,139 @@
-.background{
-    background: url("../../../../public/images/Main/backofabout.png") no-repeat;
-    background-size: cover; 
-    background-position: center; 
+// About.module.scss
+.section {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
 }
-.bodyWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 0;
-    opacity: 0;
-    transform: translateY(70px);
-    @media screen and (max-width: 1230px) {
-        flex-direction: column;
-        flex-wrap: wrap;
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 30px;
+  position: relative;
+  line-height: 1.2;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: #5382DF;
+    border-radius: 2px;
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    
+    &::after {
+      bottom: -10px;
+      width: 40px;
     }
+  }
 }
 
-.bodyWrapperShow{
-    opacity: 1;
-    transition: all 1s;
-    transform: translateY(0%);
-
-}
-.wrapper{
-    font-family: 'Inter', sans-serif;
-    padding: 40px 0 20px 0;
-    position: relative;
-    width: 40%;
-    font-size: 16px;
-    font-weight: 300;
-    display: flex;
-    //margin: 0 auto;
-    flex-direction: column;
-
-    @media screen and (max-width: 1230px) {
-        width: auto;
-    }
-}
-
-
-.title{
-    width: fit-content;
-    font-size: 40px;
-    font-weight: 700;
-    color: #5382DF;
-    gap: 5px;
-    border-bottom: 5px solid #5382DF;
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 30px;
+  
+  p {
     margin-bottom: 20px;
-    line-height: 45px;
-    @media screen and (max-width: 455px) {
-        font-size: 24px;
+    
+    &:last-child {
+      margin-bottom: 0;
     }
-
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
-.subtitle{
-    font-size: 16px;
-    padding: 10px 0;
-}
-
-
-.description{
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.button{
-    background-color: #ffffff;
-    width: 200px;
-    text-align: center;
-    margin: 20px 0;
-    padding: 10px 0;
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-    font-weight: 200;
-    border: 2px solid #5e8eec;
-    cursor: pointer;
-    transition: 0.3s;
-    &:hover {
-        color: rgb(255, 255, 255);
-        background-color: #5e8eec; 
-      }
-}
-
-.images{
-    @media screen and (max-width: 1200px) {
-        margin: 0 auto;
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #5382DF;
+  background: rgba(83,130,223,0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover {
+    background: #5382DF;
+    color: white;
+    box-shadow: 0 8px 20px rgba(83,130,223,0.3);
+    
+    svg {
+      transform: translateX(4px);
     }
-
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
 }
 
+.imageWrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+  
+  @media (max-width: 1024px) {
+    order: -1;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
 
-.images img {
-    width: 650px; 
-    height: auto;
-    @media screen and (max-width: 1520px) {
-        width: 550px;
-    } 
-
-    @media screen and (max-width: 580px) {
-        padding: 20px 0;
-    } 
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
 }

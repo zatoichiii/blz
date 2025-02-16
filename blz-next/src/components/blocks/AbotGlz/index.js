@@ -1,49 +1,64 @@
-import styles from "./AbotGlz.module.scss"
+import styles from "./AbotGlz.module.scss";
 import Container from "../../UI/Container";
 import Show from "../../UI/Show";
-import { set } from "lodash";
+import Image from "next/image";
 
 const AboutGLz = () => {
-
-
     return (
-        <div className={styles.wrapper}>
+        <section className={styles.wrapper}>
             <Container>
-                <Show>
-                    <div className={styles.bodywrapper}>
-                        <div className={styles.background}>
-                            <div className={styles.textBlock}>
-                                <div className={styles.tittle}>Представители ООО «Гомельский лифтовый завод» </div>
-                                <div className={styles.text}>Мы являемся официальными представителями ООО «Гомельский лифтовый
-                                завод» - это современное
-предприятие по производству
-качественного лифтового
-оборудования.
-Нашей отличительной чертой
-является стремление к
-достижению оптимального
-соотношения цены и качества
-производимой продукции.
-Основными видами изготавливаемой продукции
-являются пассажирские лифты, подъемники грузовые,
-подъемники для инвалидов, пандусы и др. Мы
-оказываем весь комплекс услуг по подбору,
-проектированию, монтажу и наладке, модернизации,
-обслуживанию и ремонту лифтового оборудования,
-усердно работая над развитием производства.
-Гомельский лифтовый завод создаёт SMART системы
-для платформы «Умный лифт» - наиболее комфортной
-и безопасной для пассажиров.
-    </div>
+                    <div className={styles.contentWrapper}>
+                        <div className={styles.gridContainer}>
+                            <div className={styles.textContent}>
+                                <h1 className={styles.title}>
+                                    Официальный представитель<br/>
+                                    <span className={styles.highlight}>Гомельского лифтового завода</span>
+                                </h1>
+                                
+                                <div className={styles.description}>
+                                    <p className={styles.leadText}>
+                                        Производство современных лифтовых систем класса А1 с оптимальным 
+                                        соотношением цены и качества
+                                    </p>
+                                    
+                                    <div className={styles.features}>
+                                        <div className={styles.featureItem}>
+                                            <h3>Основные направления</h3>
+                                            <ul className={styles.featureList}>
+                                                <li>Пассажирские лифты</li>
+                                                <li>Грузовые подъемники</li>
+                                                <li>Платформы для маломобильных</li>
+                                                <li>Пандусы и рампы</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div className={styles.featureItem}>
+                                            <h3>Комплекс услуг</h3>
+                                            <ul className={styles.featureList}>
+                                                <li>Проектирование и подбор</li>
+                                                <li>Монтаж и наладка</li>
+                                                <li>Модернизация</li>
+                                                <li>Техническое обслуживание</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className={styles.imagesAbout}>
-                            <img src={"/images/About/avhcnb4eg.png"} />
-                            </div>
+
+                            <figure className={styles.imageContainer}>
+                                <Image
+                                    src="/images/About/avhcnb4eg.png"
+                                    alt="Производство лифтового оборудования"
+                                    width={800}
+                                    height={600}
+                                    className={styles.image}
+                                    priority
+                                />
+                            </figure>
                         </div>
                     </div>
-                </Show>
             </Container>
-        </div>
+        </section>
     );
 };
 

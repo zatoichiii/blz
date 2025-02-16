@@ -13,7 +13,7 @@ const Banner_Products = () => {
                 <Show>
                     <div className={styles.info}>
                         <div className={styles.title}>
-                           Ассортимент
+                           Каталог
                         </div>
                         <div className={styles.subtittle}> BLZ имеет множество видов различных лифтов </div>
                     </div>

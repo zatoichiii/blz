@@ -1,96 +1,168 @@
-
-
-.bodyWrapper{
-    width: 100%;
-    display: flex;
-    margin: 40px auto;
-    @media screen and (max-width: 1230px) {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+.bg{
+    background: #f8f9ff;
 }
-.wrapper{
-    font-family: 'Inter', sans-serif;
-    padding: 40px 0;
+.section {
+    padding: 80px 0;
+    font-family: "Inter", sans-serif;
     position: relative;
-    font-size: 16px;
-    font-weight: 300;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    @media screen and (max-width: 1230px) {
-        width: auto;
+    overflow: hidden;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      opacity: 0.1;
     }
-    @media screen and (max-width: 800px) {
-        padding: 0;
-    }
-}
-
-.elements {
-    margin: 40px auto 0 auto;
-    display: flex;
-    justify-content: center; 
-    flex-wrap: wrap;
-    gap: 40px;
-    @media screen and (max-width: 1200px) {
-        flex-direction: column;
-    }
-}
-
-.element {
-    width: 48%;
-    display: flex;
-    justify-content: space-between;
-    @media screen and (max-width: 1200px) {
-        width: 100%;
-    }
-
-}
-
-.Tittle{
-    display: flex;
-    width: auto;
-    padding: 0 0 10px 0;
-    font-size: 40px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2.8rem;
     font-weight: 700;
-    color: #5382DF;
-    gap: 5px;
-    margin: auto;
-    margin-bottom: 10px;
-    border-bottom: 5px solid #5382DF;
-
-    @media screen and (max-width: 1230px) {
-        width: 710px;
+    color: #2d3748;
+    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 20px;
+    
+    span {
+      color: #5382DF;
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 34%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 4px;
+        background: #5382DF;
+        border-radius: 2px;
+      }
     }
-
-    @media screen and (max-width: 830px) {
-        width: 450px;
-        font-size: 32px;
+    
+    @media (max-width: 768px) {
+      font-size: 2rem;
+      padding-bottom: 15px;
+      
+      span::after {
+        width: 40px;
+        height: 3px;
+        bottom: -8px;
+      }
     }
-
-    @media screen and (max-width: 530px) {
-        width: auto;
-        font-size: 24px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+      
+      .icon {
+        background: #5382DF;
+        
+        svg {
+          stroke: white;
+        }
+      }
     }
-
-}
-
-.elTittle{
+  }
+  
+  .icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(83,130,223,0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+    
+    svg {
+      width: 24px;
+      height: 24px;
+      stroke: #5382DF;
+      stroke-width: 2px;
+      fill: none;
+      transition: stroke 0.3s ease;
+    }
+  }
+  
+  .cardTitle {
+    font-size: 1.3rem;
     font-weight: 600;
-    font-size: 22px;
-    color: #5382DF;
-
-}
-.tick{
-    width: 10%;
-    margin: auto;
-    padding: 0 20px 0 0;
-}
-
-.elText{
-    width: 85%;
-}
-
-.tick img{
-    width: 100%;
-}
+    color: #2d3748;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  
+  .cardText {
+    font-size: 1rem;
+    color: #4a5568;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      padding: 60px 0;
+    }
+    
+    .card {
+      padding: 30px;
+    }
+    
+    .icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 20px;
+      
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    
+    .cardTitle {
+      font-size: 1.2rem;
+    }
+    
+    .cardText {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.8rem;
+      padding: 0 20px 15px;
+      
+      span::after {
+        bottom: -6px;
+      }
+    }
+    
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }

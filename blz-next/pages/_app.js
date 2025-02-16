@@ -5,10 +5,21 @@ import Footer from "@/src/components/blocks/Footer";
 import Call from "@/src/components/blocks/Call";
 import Buttons from "@/src/components/blocks/Buttons";
 import Head from "next/head";
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
+
+
 
 function MyApp({Component, pageProps, router}) {
 	return (
-		<>
+			<GoogleReCaptchaProvider
+			reCaptchaKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+			scriptProps={{
+				async: false,
+				defer: false,
+				appendTo: "head",
+				nonce: undefined,
+			}}
+			>
 			<Head>
 				<link rel='shortcut icon' href='/img/favicon.png' />
 			</Head>
@@ -17,7 +28,7 @@ function MyApp({Component, pageProps, router}) {
 			<Component {...pageProps}/>
 			<Call/>
 			<Footer/>
-		</>
+			</GoogleReCaptchaProvider>
 	)
 }
 

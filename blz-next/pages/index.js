@@ -35,12 +35,12 @@ export default function Page() {
 
             <Banner/>
             <Stats/>
+            <Products/>
             <AboutGLz/>
             <Download/>
             <OurClients/>
             <About item={about}/>
             <Photos/>
-            <Products/>
             <Ticks/>
             <About item={security}/>
             <FAQ/>

@@ -13,7 +13,7 @@ const Banner_News = () => {
                 <Show>
                     <div className={styles.info}>
                         <div className={styles.title}>
-                           Новости
+                           Статьи
                         </div>
                         <div className={styles.subtittle}> Будьте в курсе последних событий компании </div>
                     </div>

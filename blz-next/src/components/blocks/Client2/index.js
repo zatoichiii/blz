@@ -28,7 +28,7 @@ const Client2 = () => {
                             </div>
                             <a href='/products'>
                                 <div className={styles.button}>
-                                    Ассортимент
+                                    Каталог
                                 </div>
                             </a>
 
