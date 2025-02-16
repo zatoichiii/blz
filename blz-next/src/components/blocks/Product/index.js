@@ -18,7 +18,6 @@ const Product = ({ lift }) => {
 
   return (
     <Container>
-      <Show>
         <motion.div 
           className={styles.bodyWrapper}
           initial="hidden"
@@ -83,7 +82,6 @@ const Product = ({ lift }) => {
             </div>
           </motion.div>
         </motion.div>
-      </Show>
     </Container>
   );
 };
