@@ -6,12 +6,10 @@ import Call from "@/src/components/blocks/Call";
 import Buttons from "@/src/components/blocks/Buttons";
 import Head from "next/head";
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
-
-
-
+import MaintenanceBanner from "@/src/components/blocks/MaintenanceBanner/MaintenanceBanner";
 function MyApp({Component, pageProps, router}) {
 	return (
-			<GoogleReCaptchaProvider
+		<GoogleReCaptchaProvider
 			reCaptchaKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
 			scriptProps={{
 				async: false,
@@ -19,7 +17,7 @@ function MyApp({Component, pageProps, router}) {
 				appendTo: "head",
 				nonce: undefined,
 			}}
-			>
+		>
 			<Head>
 				<link rel='shortcut icon' href='/img/favicon.png' />
 			</Head>
@@ -28,7 +26,8 @@ function MyApp({Component, pageProps, router}) {
 			<Component {...pageProps}/>
 			<Call/>
 			<Footer/>
-			</GoogleReCaptchaProvider>
+			<MaintenanceBanner />
+		</GoogleReCaptchaProvider>
 	)
 }
 
